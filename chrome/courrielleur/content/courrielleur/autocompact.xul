@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+
+<?xml-stylesheet href="chrome://courrielleur/skin/courrielleur.css" type="text/css"?>
+
+<!DOCTYPE window SYSTEM "chrome://courrielleur/locale/courrielleur.dtd">
+
+<window class="courrielleur-apropos" 
+  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+  width="450px" height="250px"
+  onload="loadDlg();" onclose="closeDlg();">
+
+  <script type="application/x-javascript" src="chrome://courrielleur/content/autocompact.js"/>
+  <script type="application/x-javascript" src="chrome://courrielleur/content/courrielleur.js"/>
+
+  <vbox id="bandeau" class="bandeau">
+    <description id="bandeau-titre" class="bandeau-titre">&cm2titre-autocompact;</description>
+  </vbox>
+  
+  <vbox flex="1">
+    <description class="cm2lib-autocompact" id="cm2lib-autocompact">&cm2lib-autocompact;</description>
+  </vbox>
+  
+  <vbox flex="1">
+    <progressmeter id="compactvu" mode="determined" style="margin-top:10px;margin-bottom:10px;margin-left:20px;margin-right:20px" height="20px"/>
+  </vbox>
+
+  <hbox align="center" style="align:center;padding-bottom:10px;">
+    <hbox flex="1"/>
+    <button id="btOk" label="Compacter maintenant" oncommand="Compacter();"/>
+    <button id="btQuit" label="Me le rappeler plus tard" oncommand="closeDlg();"/>
+    <hbox flex="1"/>
+  </hbox>
+  
+</window>

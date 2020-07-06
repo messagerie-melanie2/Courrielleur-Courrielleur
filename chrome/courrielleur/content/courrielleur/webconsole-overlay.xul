@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE overlay SYSTEM "chrome://courrielleur/locale/courrielleur.dtd">
+
+<overlay id="cm2-webconsole-overlay"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+  <script type="application/javascript"><![CDATA[
+
+    ChromeUtils.import("resource://gre/modules/Services.jsm");
+
+    window.addEventListener("load", cm2load);
+
+    function cm2load(){
+
+      window.removeEventListener("load", cm2load);
+
+      let group=this.document.getElementsByClassName("devtools-toolbarbutton-group")[0];
+      if (group){
+        let bt=this.document.getElementsByClassName("webconsole-record-button")[0];
+        if (bt){
+          let bouton=bt.cloneNode();
+          group.appendChild(bouton);
+          bouton.removeAttribute("hidden");
+        }
+      }
+    }
+
+    function cm2Enregistrer(){
+
+      let devtools=ChromeUtils.import("resource://devtools/shared/Loader.jsm", {}).devtools;
+      let HUDService=devtools.require("devtools/client/webconsole/hudservice").HUDService;
+      let hud=HUDService.getBrowserConsole();
+      let outputNode=hud.outputNode;
+      let lignes=outputNode.childNodes;
+      //console.log("[CM2] nb lignes:"+lignes.length);
+
+      const Cc=Components.classes;
+      const Ci=Components.interfaces;
+
+      let filePicker=Cc["@mozilla.org/filepicker;1"].createInstance(Ci.nsIFilePicker);
+      filePicker.init(window, "Enregistrer sous...", Ci.nsIFilePicker.modeSave);
+
+      filePicker.appendFilters(Ci.nsIFilePicker.filterText);
+      filePicker.appendFilters(Ci.nsIFilePicker.filterAll);
+      filePicker.defaultString="errorconsole.txt";
+
+      filePicker.open(function(rv){
+
+        if (Ci.nsIFilePicker.returnOK==rv ||
+            Ci.nsIFilePicker.returnReplace==rv){
+
+          let fichier=filePicker.file;
+          //console.log("[CM2] fichier:"+fichier.path);
+          let flux=Cc["@mozilla.org/network/file-output-stream;1"].createInstance(Ci.nsIFileOutputStream);
+          flux.init(fichier, 0x02|0x08|0x20, 0600, 0); // readwrite, create, truncate
+
+          let converter=Components.classes["@mozilla.org/intl/converter-output-stream;1"].
+                        createInstance(Components.interfaces.nsIConverterOutputStream);
+          converter.init(flux, "UTF-8", 0, 0);
+
+          for (let i=0;i<lignes.length;i++){
+            let ligne=lignes[i].textContent;
+            converter.writeString(ligne, ligne.length);
+          }
+          converter.close();
+        }
+      });
+    }
+  ]]></script>
+
+  <toolbarbutton label="Enregistrer..."
+                 class="devtools-toolbarbutton webconsole-record-button"
+                 tooltiptext="Enregistrer la console dans un fichier"
+                 oncommand="cm2Enregistrer();"
+                 style="margin-left:8px"
+                 hidden="true"/>
+
+</overlay>

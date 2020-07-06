@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://courrielleur/skin/courrielleur.css" type="text/css"?>
+
+<!DOCTYPE overlay SYSTEM "chrome://courrielleur/locale/courrielleur.dtd">
+
+<overlay xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+  <toolbar id="mail-bar3" defaultset="button-getmsg,button-newmsg,button-chat,button-address,btanais,separator,button-tag,button-print,separator,qfb-show-filter-bar,spring,gloda-search,archibald-btarchive,button-appmenu"/>
+
+</overlay>

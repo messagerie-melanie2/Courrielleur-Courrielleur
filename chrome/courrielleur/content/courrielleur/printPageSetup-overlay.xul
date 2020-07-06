@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE overlay SYSTEM "chrome://courrielleur/locale/courrielleur.dtd">
+
+<overlay xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+  <dialog xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+          id="printPageSetupDialog"
+          onload="onLoad(); setupOnLoad();"
+          ondialogaccept="setupOnAccept(); return onAccept();">
+
+    <script type="application/javascript" src="chrome://courrielleur/content/msgprint-overlay.js"/>
+    <script type="application/javascript" src="chrome://messenger/content/msgPrintEngine.js"/>
+    
+    <tabbox  id="tabbox1">
+      <tabpanels id="panneaux">
+        <vbox id="onglet1">
+          <groupbox id="entetes-grp">
+            <caption label="&entetes.titre;"/>
+            <radiogroup id="entetes">
+              <radio id="entete0" label="&entetes.reduites;" value="0"/>
+              <radio id="entete1" label="&entetes.normales;" value="1"/>
+              <radio id="entete2" label="&entetes.completes;" value="2"/>
+              <separator/>
+              <checkbox id="choixentetes" label="&entetes.choix;"/>
+            </radiogroup>
+          </groupbox>
+        </vbox>
+      </tabpanels>
+    </tabbox>
+    
+  </dialog>  
+
+</overlay>

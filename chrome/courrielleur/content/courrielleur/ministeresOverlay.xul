@@ -1,0 +1,14 @@
+<?xml-stylesheet href="chrome://courrielleur/skin/courrielleur.css" type="text/css"?>
+
+<!DOCTYPE window SYSTEM "chrome://courrielleur/locale/courrielleur.dtd">
+
+<overlay xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+<script type="application/x-javascript" src="chrome://courrielleur/content/ministeresOverlay.js"/>
+
+  <vbox id="infosapropos">
+    <description id="listeministeres" class="courrielleur-libmin"></description>
+    <description id="produitpar">&courrielleur.produitpar;</description>
+  </vbox>
+
+</overlay>

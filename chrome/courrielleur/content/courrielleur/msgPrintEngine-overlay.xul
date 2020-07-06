@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE overlay SYSTEM "chrome://courrielleur/locale/courrielleur.dtd">
+
+<overlay xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+  <script type="application/javascript" src="chrome://courrielleur/content/msgprint-overlay.js"/>
+
+  <window id="printEngineWin"
+          xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+          onload="cm2PrintOnLoad();  OnLoadPrintEngine();"
+          onunload="cm2PrintOnUnLoad()">
+  </window>
+  
+</overlay>

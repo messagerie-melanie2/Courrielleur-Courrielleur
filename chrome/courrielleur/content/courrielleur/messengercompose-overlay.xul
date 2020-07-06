@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE overlay SYSTEM "chrome://courrielleur/locale/courrielleur.dtd">
+
+<?xml-stylesheet href="chrome://courrielleur/skin/courrielleur.css" type="text/css"?>
+
+<overlay xmlns:nc="http://home.netscape.com/NC-rdf#"
+          xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+  <script type="application/x-javascript" src="chrome://courrielleur/content/cm2lienfichier.js"/>
+  <script type="application/javascript" src="chrome://courrielleur/content/msgprint-overlay.js"/>
+
+  <!-- Commande contextuelle d'ajout de lien de fichier(s)  -->
+  <commandset id="composeCommands">
+    <command id="cmd_Cm2InsertLienFic" oncommand="cmdCm2InsertLien('fichier')"/>
+    <command id="cmd_Cm2InsertLienDos" oncommand="cmdCm2InsertLien('dossier')"/>
+  </commandset>
+  <!-- menu joindre -->
+  <menu id="menu_Attach">
+    <menupopup id="menu_AttachPopup">
+      <menuitem label="&courrielleur.liendos.lib;"
+                id="menu-liendos"
+                insertbefore="menu_attachPage"
+                accesskey="&courrielleur.liendos.accesskey;"
+                class="menuitem-iconic"
+                command="cmd_Cm2InsertLienDos"/>
+      <menuitem label="&courrielleur.lienfic.lib;"
+                id="menu-lienfic"
+                insertbefore="menu_attachPage"
+                accesskey="&courrielleur.lienfic.accesskey;"
+                class="menuitem-iconic"
+                command="cmd_Cm2InsertLienFic"/>
+    </menupopup>
+  </menu>  
+  <!-- bouton joindre -->
+  <menupopup id="button-attachPopup">
+    <menuitem label="&courrielleur.liendos.lib;"
+              id="bouton-liendos"
+              insertbefore="button-attachPopup_attachPageItem"
+              accesskey="&courrielleur.liendos.accesskey;"
+              class="menuitem-iconic"
+              command="cmd_Cm2InsertLienDos"/>
+    <menuitem label="&courrielleur.lienfic.lib;"
+              id="bouton-lienfic"
+              insertbefore="button-attachPopup_attachPageItem"
+              accesskey="&courrielleur.lienfic.accesskey;"
+              class="menuitem-iconic"
+              command="cmd_Cm2InsertLienFic"/>
+  </menupopup>
+
+  <!-- options 'Melanissimo', 'folderpane' dans le menu Outils -->
+  <menupopup id="taskPopup">
+    <menuitem label="&btAgenda.lib;"
+              id="btAgenda-menu"
+              insertafter="tasksMenuAddressBook"
+              oncommand="Cm2OuvreUrlPref('courrielleur.urlagenda');"/>
+    <menuitem label="&btMelanissimo.lib;"
+              id="btMelanissimo-menu"
+              accesskey="m"
+              insertafter="tasksMenuAddressBook"
+              oncommand="cm2OuvreMelanissimo();"/>
+
+    <menuitem label="&tbsortfolders.libelle;"
+              id="tbsortfolders-menu" insertafter="btAgenda-menu"
+              class="menuitem-iconic"
+              oncommand="window.openDialog('chrome://tbsortfolders/content/', '',
+                        'chrome=yes, modal=yes, dialog=no, resizable=yes');"/>
+  </menupopup>
+
+  <menupopup id="msgComposeContext">
+    <menuitem label="&courrielleur.liendos.lib;"
+              id="courrielleur-menuliendos"
+              insertafter="spellCheckSuggestionsSeparator"
+              accesskey="&courrielleur.liendos.accesskey;"
+              class="menuitem-iconic"
+              command="cmd_Cm2InsertLienDos"/>
+    <menuitem label="&courrielleur.lienfic.lib;"
+              id="courrielleur-menulienfic"
+              insertafter="spellCheckSuggestionsSeparator"
+              accesskey="&courrielleur.lienfic.accesskey;"
+              class="menuitem-iconic"
+              command="cmd_Cm2InsertLienFic"/>
+  </menupopup>
+
+  <toolbar id="composeToolbar2" defaultset="button-send,separator,anaismoz-dest,separator,button-address,spellingButton,button-attach,button-security,button-save">
+
+  </toolbar>
+
+</overlay>

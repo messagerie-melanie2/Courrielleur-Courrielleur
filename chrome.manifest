@@ -1,0 +1,3 @@
+manifest chrome/courrielleur.manifest
+manifest chrome/fr.manifest
+manifest components/cm2startup.manifest

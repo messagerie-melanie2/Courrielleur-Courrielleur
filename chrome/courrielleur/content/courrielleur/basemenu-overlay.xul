@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+
+
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://courrielleur/skin/courrielleur.css" type="text/css"?>
+
+<!DOCTYPE overlay SYSTEM "chrome://courrielleur/locale/courrielleur.dtd">
+
+<overlay xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+  <script type="application/x-javascript" src="chrome://courrielleur/content/courrielleur.js"/>
+
+  <!-- barre de menus -->
+  <menuitem id="menu_openHelp" oncommand="cm2AideCourrielleur();"/>
+  <menuitem id="releaseNotes" oncommand="Cm2OuvreLienPrefExterne('courrielleur.notesversion');"/>
+  <menuitem id="whatsNew" oncommand="Cm2OuvreLienPrefExterne('courrielleur.nouveautes');"/>
+
+  <!-- options 'Melanissimo', 'folderpane' dans le menu Outils -->
+  <menupopup id="taskPopup">
+    <menuitem label="&btAgenda.lib;"
+              id="btAgenda-menu"
+              insertafter="addressBook"
+              oncommand="Cm2OuvreUrlPref('courrielleur.urlagenda');"/>
+    <menuitem label="&btMelanissimo.lib;"
+              id="btMelanissimo-menu"
+              accesskey="m"
+              insertafter="addressBook"
+              oncommand="cm2OuvreMelanissimo();"/>
+    <menuitem label="&tbsortfolders.libelle;"
+              id="tbsortfolders-menu" insertafter="btAgenda-menu"
+              class="menuitem-iconic"
+              oncommand="window.openDialog('chrome://tbsortfolders/content/', '',
+                        'chrome=yes, modal=yes, dialog=no, resizable=yes');"/>
+  </menupopup>
+
+  <menupopup id="menu_HelpPopup">
+    
+    <menuitem id="aproposCourrielleur" accesskey="&courrielleur.aproposkey;"
+              label="&courrielleur.libapropos;"
+              oncommand="aproposCourrielleur();"/>
+    <menuitem id="cm2PageAccueil"
+              label="&cm2PageAccueil.lib;" insertafter="menu_openHelp"
+              oncommand="cm2PageAccueil();"/>
+    <menuitem id="cm2idees"
+              label="&cm2idees.lib;" insertbefore="functionsSeparator"
+              oncommand="cm2BoiteAIdees();"/>
+  </menupopup>
+
+  <!-- menu application -->
+  <menupopup id="appmenu_taskPopup">
+    
+    <menuitem label="&btAgenda.lib;"
+              id="appmenu_btAgenda"
+              insertafter="appmenu_addressBook"
+              oncommand="Cm2OuvreUrlPref('courrielleur.urlagenda');"/>
+    <menuitem label="&btMelanissimo.lib;"
+              id="appmenu_btMelanissimo"
+              accesskey="m"
+              insertafter="appmenu_addressBook"
+              oncommand="cm2OuvreMelanissimo();"/>
+
+    <menuitem label="&tbsortfolders.libelle;"
+              id="appmenu_tbsortfolders" insertafter="appmenu_btAgenda"
+              class="menuitem-iconic"
+              oncommand="window.openDialog('chrome://tbsortfolders/content/', '',
+                        'chrome=yes, modal=yes, dialog=no, resizable=yes');"/>
+  </menupopup>
+
+  <menupopup id="appmenu_helpMenupopup">
+    
+    <menuitem id="appmenu_openHelp" oncommand="cm2AideCourrielleur();"/>
+    <menuitem id="appmenu_cm2PageAccueil"
+              label="&cm2PageAccueil.lib;" insertafter="appmenu_openHelp"
+              oncommand="cm2PageAccueil();"/>
+
+    <menuitem id="appmenu_whatsNew" oncommand="Cm2OuvreLienPrefExterne('courrielleur.nouveautes');"/>
+    <menuitem id="appmenu_releaseNotes" oncommand="Cm2OuvreLienPrefExterne('courrielleur.notesversion');"/>
+    <menuitem id="appmenu_about" accesskey="&courrielleur.aproposkey;"
+              label="&courrielleur.libapropos;" oncommand="aproposCourrielleur();"/>
+  </menupopup>
+  
+</overlay>

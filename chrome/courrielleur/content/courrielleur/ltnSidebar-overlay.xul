@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE overlay SYSTEM "chrome://courrielleur/locale/courrielleur.dtd">
+
+<?xml-stylesheet href="chrome://courrielleur/skin/courrielleur.css" type="text/css"?>
+
+<overlay xmlns:nc="http://home.netscape.com/NC-rdf#"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+  <vbox id="ltnSidebar">
+
+    <hbox id="cm2btlnhorde">
+
+      <hbox flex="1" align="center">
+        <spacer flex="1"/>
+        <image src="chrome://courrielleur/skin/melanieweb32.png"/>
+        <spacer flex="1"/>
+      </hbox>
+      <vbox>
+        <button label="&btHordePrint;" observes="cmd_print" oncommand="goDoCommand('cmd_print')"/>
+        <button label="&btHordeAjoutAg;" oncommand="cm2PacomeAjoutAgenda();"/>
+        <button label="&btHordeAgs;" oncommand="webtabs.openWebAppTab('roundcube', 'shareCalendar');"/>
+      </vbox>
+      <hbox flex="2"/>
+
+    </hbox>
+
+  </vbox>
+
+</overlay>

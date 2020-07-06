@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+
+<?xml-stylesheet href="chrome://courrielleur/skin/courrielleur.css" type="text/css"?>
+
+<!DOCTYPE overlay [
+<!ENTITY % msgHdrViewOverlayDTD SYSTEM "chrome://messenger/locale/msgHdrViewOverlay.dtd">
+%msgHdrViewOverlayDTD;
+<!ENTITY % courrielleurDTD SYSTEM "chrome://courrielleur/locale/courrielleur.dtd">
+%courrielleurDTD;
+]>
+
+<overlay xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+  <vbox id="expandedHeadersBox">
+  <hbox id="expandedHeadersTopBox">
+  <toolbox id="header-view-toolbox">
+  <toolbarpalette id="header-view-toolbar-palette">
+  
+  <toolbarbutton id="hdrJunkButton" hidden="true"/>
+             
+  <toolbarbutton id="hdrMultiJunkButton" label="&hdrJunkButton1.label;"
+                 tooltiptext="&hdrJunkButton1.tooltip;"
+                 observes="button_junk"
+                 class="toolbarbutton-1 msgHeaderView-button hdrJunkButton"
+                 type="menu-button"
+                 oncommand="goDoCommand('button_junk');RestoreFocusAfterHdrButton();">                             
+    <menupopup id="hdrJunkDropdown">
+      <menuitem id="hdrJunkButton"
+                label="&hdrJunkButton1.label;"
+                tooltiptext="&hdrJunkButton1.tooltip;"
+                oncommand="goDoCommand('button_junk');event.stopPropagation();"/>                            
+    </menupopup>             
+  </toolbarbutton>
+  
+  </toolbarpalette>
+  </toolbox>
+  </hbox>
+  </vbox>
+
+  <toolbar id="header-view-toolbar"
+           defaultset="hdrReplyToSenderButton,hdrSmartReplyButton,hdrDualForwardButton,hdrArchiveButton,hdrCommentairesButton,hdrMultiJunkButton,hdrTrashButton"/>
+           
+</overlay>

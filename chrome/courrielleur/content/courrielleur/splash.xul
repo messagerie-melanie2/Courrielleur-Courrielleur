@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://courrielleur/skin/courrielleur.css" type="text/css"?>
+
+<!DOCTYPE window [
+<!ENTITY % courrielleurDTD SYSTEM "chrome://courrielleur/locale/courrielleur.dtd" >
+%courrielleurDTD;
+]>
+
+
+<window id="cm2splash"
+        xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+        onload="startCm2Splash();">
+
+  <script type="application/x-javascript" src="chrome://courrielleur/content/courrielleur.js"/>
+  <script type="application/x-javascript" src="chrome://courrielleur/content/certificats.js"/>
+  <script type="application/x-javascript" src="chrome://courrielleur/content/splash.js"/>
+  <script type="application/x-javascript" src="chrome://pippki/content/pippki.js"/>
+
+  <vbox flex="1">
+  
+    <image src="chrome://courrielleur/skin/loading-image.png"/>
+
+    <hbox flex="1">
+      <description class="cm2splash-charge">&cm2splash-charge;</description>
+      <box flex="1"/>
+      <description class="cm2splash-charge" id="cmel-version">Version</description>
+     </hbox>
+      
+    <!--#5510-->
+    <!--<hbox class="cmel-splash-cadre">
+    <hbox class="cmel-splash-bar" flex="1"/>
+    </hbox>-->
+    <hbox class="slider">
+        <hbox class="line"></hbox>
+        <hbox class="subline inc"></hbox>
+    </hbox>
+    
+  </vbox>
+
+</window>

@@ -1,0 +1,114 @@
+<!ENTITY courrielleur.apropos.titre "À propos du Courrielleur Mél">
+<!ENTITY courrielleur.apropos.text1 "Courrielleur Mél">
+<!ENTITY courrielleur.apropos.text2 "Version : &courrielleur.numver;">
+<!ENTITY courrielleur.apropos.text3 "Publié le : &courrielleur.datever;">
+<!ENTITY courrielleur.libapropos "À propos du Courrielleur Mél">
+<!ENTITY courrielleur.aproposkey "C">
+<!ENTITY courrielleur.numver "8.5.1T1">
+<!ENTITY courrielleur.datever "29/6/2020">
+
+
+<!ENTITY courrielleur.stministere "">
+<!ENTITY courrielleur.produitpar "produit par : SG/SNUM/UNI/DETN (Département environnement de travail numérique)">
+
+<!ENTITY courrielleur.extension "Composant">
+<!ENTITY courrielleur.descext "Description">
+<!ENTITY courrielleur.verext "Version">
+
+<!ENTITY cm2splash-charge "Chargement en cours...">
+
+<!ENTITY courrielleur.libanais "Anais">
+<!ENTITY courrielleur.libarchibald "Archibald">
+<!ENTITY courrielleur.libpacome "Pacome">
+<!ENTITY courrielleur.libcommentaires "Commentaires">
+<!ENTITY courrielleur.libkiddo "Armel">
+<!ENTITY courrielleur.libcontacts "Contacts">
+<!ENTITY courrielleur.libcm2m2ssimo "Mélanissimo">
+
+<!ENTITY courrielleur.libsigne "Signature">
+<!ENTITY courrielleur.descsigne "Insérer une signature">
+<!ENTITY courrielleur.versigne "0.3.1">
+
+<!ENTITY courrielleur.bulleaide "Aller à la page état de Mél">
+
+
+<!ENTITY btMelanissimo.lib "Mélanissimo">
+<!ENTITY btMelanissimo.bulle "Créer un nouveau message avec Mélanissimo">
+
+<!ENTITY btAgenda.lib "Ouvrir Mél dans un navigateur">
+<!ENTITY btAgenda.bulle "Accès à Mél web et à Mon compte">
+
+<!ENTITY courrielleur.lienfic.lib "Insérer un lien sur un fichier...">
+<!ENTITY courrielleur.lienfic.accesskey "f">
+<!ENTITY courrielleur.liendos.lib "Insérer un lien sur un dossier...">
+<!ENTITY courrielleur.liendos.accesskey "d">
+
+<!ENTITY courrielleur.libredir "Mailredirect">
+<!ENTITY courrielleur.descredir "Rediriger les messages sélectionnés">
+<!ENTITY courrielleur.verredir "0.8.5">
+
+<!ENTITY courrielleur.libcal "Agenda Mél">
+<!ENTITY courrielleur.cal.tooltip "Agenda intégré dans le courrielleur">
+<!ENTITY courrielleur.vercal "4.0">
+
+<!-- extension extra_folder_columns -->
+<!ENTITY courrielleur.libefc "Extra Folder Columns">
+<!ENTITY courrielleur.descefc "Ajoute des colonnes supplémentaires au panneau des dossiers">
+<!ENTITY courrielleur.verefc "1.15">
+
+
+<!ENTITY cm2PageAccueil.lib "Page d'accueil">
+
+<!-- webhorde -->
+<!ENTITY webhorde.titre "&btAgenda.lib;">
+
+<!ENTITY btHordePrint "Affichage/Impression Planning">
+<!ENTITY btHordeAgs "Partager mes agendas">
+<!ENTITY btHordeAjoutAg "Ajouter un agenda">
+
+
+<!-- infos mise a jour -->
+<!ENTITY cm2titremaj "Le Courrielleur Mél a été mis à jour avec succès">
+<!ENTITY cm2libmaj "Cliquer sur le lien suivant pour consulter les informations de mise à jour:">
+<!ENTITY cm2lienmaj "Détails">
+
+<!ENTITY courrielleur.certs.titre "Mise à jour des certificats du courrielleur">
+
+<!-- tbsortfolders -->
+<!ENTITY tbsortfolders.desc "tbsortfolders">
+<!ENTITY tbsortfolders.libelle "Classement des comptes et dossiers">
+<!ENTITY tbsortfolders.version "1.1">
+
+<!-- module WebAppsM2 -->
+<!ENTITY courrielleur.libwebappsm2 "WebAppsM2">
+<!ENTITY webappsm2.desc "Intégration de Pégase, Ariane et Mon Compte">
+<!ENTITY webappsm2.numver "2.0.8">
+
+<!ENTITY entetes.titre "Impression des entêtes courrier">
+<!ENTITY entetes.reduites "Entêtes réduites">
+<!ENTITY entetes.normales "Entêtes normales (valeur par défaut)">
+<!ENTITY entetes.completes "Entêtes complètes">
+<!ENTITY entetes.choix "Mémoriser ce choix">
+
+<!ENTITY cm2titre-autocompact "Compacter les dossiers">
+<!ENTITY cm2lib-autocompact "Compacter les dossiers de messages?">
+
+
+<!ENTITY cm2idees.lib "Proposer une amélioration">
+<!ENTITY cm2idees-titre "Proposer une amélioration">
+<!ENTITY cm2idees-desc "Une nouvelle fonctionnalité, une amélioration d'ergonomie...<html:br/>
+Vous avez une idée pour l'amélioration de Mélanie2 ? Vous pouvez nous en faire part ci-dessous.">
+<!ENTITY btvalider "Valider">
+<!ENTITY btvalider.cle "V">
+<!ENTITY btannuler "Annuler">
+<!ENTITY btannuler.cle "A">
+
+
+<!-- mantis 0005509: Harmonisation design barre d'outils principale -->
+<!ENTITY btCMel-courrier "Courriel">
+<!ENTITY btCMel-contacts "Contacts">
+<!ENTITY btCMel-agenda "Agenda">
+<!ENTITY btCMel-taches "Tâches">
+<!ENTITY btCMel-sondage "Sondage">
+<!ENTITY btCMel-discus "Discussion">
+<!ENTITY btCMel-param "Paramètres">
