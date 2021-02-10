@@ -144,7 +144,7 @@ Cm2Startup.prototype = {
     } 
 
     else if ("final-ui-startup"==aTopic){
-      Services.console.logStringMessage("Cm2Startup final-ui-startup");
+      //Services.console.logStringMessage("Cm2Startup final-ui-startup");
       this.migreUI();    
     }
   },
@@ -176,7 +176,7 @@ Cm2Startup.prototype = {
 
     if (null==this.splash)
       return;
-    Services.console.logStringMessage("Cm2Startup fermeture de la fenetre de lancement");
+    //Services.console.logStringMessage("Cm2Startup fermeture de la fenetre de lancement");
 
     // temps de demarrage
     let cm2start=Services.prefs.getCharPref("courrielleur.startTime");
