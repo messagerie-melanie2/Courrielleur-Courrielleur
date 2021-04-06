@@ -4,8 +4,8 @@
 <!ENTITY courrielleur.apropos.text3 "Publié le : &courrielleur.datever;">
 <!ENTITY courrielleur.libapropos "À propos du Courrielleur Mél">
 <!ENTITY courrielleur.aproposkey "C">
-<!ENTITY courrielleur.numver "8.5.2T5">
-<!ENTITY courrielleur.datever "26/03/2021">
+<!ENTITY courrielleur.numver "8.5.2T6">
+<!ENTITY courrielleur.datever "06/04/2021">
 
 
 <!ENTITY courrielleur.stministere "">
@@ -38,7 +38,7 @@
 <!ENTITY btAgenda.lib "Ouvrir Mél dans un navigateur">
 <!ENTITY btAgenda.bulle "Accès à Mél web et à Mon compte">
 
-<!ENTITY courrielleur.lienfic.lib "Insérer un lien sur un fichier...">
+<!ENTITY courrielleur.lienfic.lib "Insé2rer un lien sur un fichier...">
 <!ENTITY courrielleur.lienfic.accesskey "f">
 <!ENTITY courrielleur.liendos.lib "Insérer un lien sur un dossier...">
 <!ENTITY courrielleur.liendos.accesskey "d">
