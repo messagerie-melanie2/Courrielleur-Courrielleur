@@ -10,18 +10,18 @@
           xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 
   <script type="application/x-javascript" src="chrome://courrielleur/content/messenger-overlay.js"/>
-
+<!-- #6103 remplacement oncommand par onmousedown pour gérer le masquage des menus -->
   <toolbox id="navigation-toolbox">
   
     <toolbar id="mail-toolbar-menubar2" mode="full" customizable="false" 
             defaultset="menubar-items,spring,btCMel-courrier,btCMel-contacts,btCMel-agenda,btCMel-taches,btCMel-sondage,btCMel-discus,btCMel-param" iconsize="large">
-      <toolbarbutton id="btCMel-courrier" class="toolbarbutton-1 btCMel-barre" label="&btCMel-courrier;" oncommand="cmelSwitchToApp(this.id);"/>
-      <toolbarbutton id="btCMel-contacts" class="toolbarbutton-1 btCMel-barre" label="&btCMel-contacts;" oncommand="cmelSwitchToApp(this.id);"/>
-      <toolbarbutton id="btCMel-agenda" class="toolbarbutton-1 btCMel-barre" label="&btCMel-agenda;" oncommand="cmelSwitchToApp(this.id);"/>
-      <toolbarbutton id="btCMel-taches" class="toolbarbutton-1 btCMel-barre" label="&btCMel-taches;" oncommand="cmelSwitchToApp(this.id);"/>
-      <toolbarbutton id="btCMel-sondage" class="toolbarbutton-1 btCMel-barre" label="&btCMel-sondage;" oncommand="cmelSwitchToApp(this.id);"/>
-      <toolbarbutton id="btCMel-discus" class="toolbarbutton-1 btCMel-barre" label="&btCMel-discus;" oncommand="cmelSwitchToApp(this.id);"/>
-      <toolbarbutton id="btCMel-param" class="toolbarbutton-1 btCMel-barre" label="&btCMel-param;" oncommand="cmelSwitchToApp(this.id);"/>
+      <toolbarbutton id="btCMel-courrier" class="toolbarbutton-1 btCMel-barre" label="&btCMel-courrier;" onmousedown="cmelSwitchToApp(this.id);"/>
+      <toolbarbutton id="btCMel-contacts" class="toolbarbutton-1 btCMel-barre" label="&btCMel-contacts;" onmousedown="cmelSwitchToApp(this.id);"/>
+      <toolbarbutton id="btCMel-agenda" class="toolbarbutton-1 btCMel-barre" label="&btCMel-agenda;" onmousedown="cmelSwitchToApp(this.id);"/>
+      <toolbarbutton id="btCMel-taches" class="toolbarbutton-1 btCMel-barre" label="&btCMel-taches;" onmousedown="cmelSwitchToApp(this.id);"/>
+      <toolbarbutton id="btCMel-sondage" class="toolbarbutton-1 btCMel-barre" label="&btCMel-sondage;" onmousedown="cmelSwitchToApp(this.id);"/>
+      <toolbarbutton id="btCMel-discus" class="toolbarbutton-1 btCMel-barre" label="&btCMel-discus;" onmousedown="cmelSwitchToApp(this.id);"/>
+      <toolbarbutton id="btCMel-param" class="toolbarbutton-1 btCMel-barre" label="&btCMel-param;" onmousedown="cmelSwitchToApp(this.id);"/>
       <hbox flex="100%"/>
     </toolbar>
 
