@@ -298,6 +298,11 @@ toolbar[iconsize="small"] #cm2-tab-anais[disabled] {
   -moz-image-region: rect(0px 16px 16px 0px);
 }
 
+#button-send-dif {
+  list-style-image: url("chrome://courrielleur/skin/differer16.png");
+  -moz-image-region: rect(0px 16px 16px 0px);
+}
+
 #appmenu_btAgenda{
   list-style-image: url("chrome://courrielleur/skin/melanieweb16.png");
   -moz-image-region: rect(0px 16px 16px 0px);
