@@ -4,7 +4,7 @@
 <!ENTITY courrielleur.apropos.text3 "Publié le : &courrielleur.datever;">
 <!ENTITY courrielleur.libapropos "À propos du Courrielleur Mél">
 <!ENTITY courrielleur.aproposkey "C">
-<!ENTITY courrielleur.numver "8.5.2">
+<!ENTITY courrielleur.numver "8.6.0T1">
 <!ENTITY courrielleur.datever "19/04/2021">
 
 
@@ -45,7 +45,7 @@
 
 <!ENTITY courrielleur.libredir "Mailredirect">
 <!ENTITY courrielleur.descredir "Rediriger les messages sélectionnés">
-<!ENTITY courrielleur.verredir "0.8.5">
+<!ENTITY courrielleur.verredir "0.8.6">
 
 <!ENTITY courrielleur.libcal "Agenda Mél">
 <!ENTITY courrielleur.cal.tooltip "Agenda intégré dans le courrielleur">
