@@ -84,7 +84,7 @@
               command="cmd_Cm2InsertLienFic"/>
   </menupopup>
 
-  <toolbar id="composeToolbar2" defaultset="button-send,separator,button-sendDif,separator,anaismoz-dest,separator,button-address,spellingButton,button-attach,button-save">
+  <toolbar id="composeToolbar2" defaultset="button-send,separator,button-send-dif,separator,anaismoz-dest,separator,button-address,spellingButton,button-attach,button-save">
 
   </toolbar>
 
