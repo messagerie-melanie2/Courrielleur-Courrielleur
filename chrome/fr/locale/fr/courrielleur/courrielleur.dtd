@@ -38,7 +38,7 @@
 <!ENTITY btAgenda.lib "Ouvrir Mél dans un navigateur">
 <!ENTITY btAgenda.bulle "Accès à Mél web et à Mon compte">
 
-<!ENTITY courrielleur.lienfic.lib "Insé2rer un lien sur un fichier...">
+<!ENTITY courrielleur.lienfic.lib "Insérer un lien sur un fichier...">
 <!ENTITY courrielleur.lienfic.accesskey "f">
 <!ENTITY courrielleur.liendos.lib "Insérer un lien sur un dossier...">
 <!ENTITY courrielleur.liendos.accesskey "d">
