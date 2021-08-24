@@ -126,6 +126,12 @@
           <label value="&webappsm2.desc;"/>
         </row>
         
+        <!-- #6175 module Lookout -->
+        <row class="courrielleur-grille-ligne">
+          <label value="&courrielleur.liblookout;"/>
+          <label value="&lookout.desc;"/>
+        </row>
+        
         <!-- Thunderbird -->
         <row class="courrielleur-grille-ligne">
           <label value="Thunderbird"/>

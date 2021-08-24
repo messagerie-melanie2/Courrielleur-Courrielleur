@@ -84,6 +84,11 @@
 <!ENTITY webappsm2.desc "Intégration de Pégase, Ariane et Mon Compte">
 <!ENTITY webappsm2.numver "2.0.8">
 
+<!-- module Lookout -->
+<!ENTITY courrielleur.liblookout "Lookout">
+<!ENTITY lookout.desc "Compatibilité avec les outils de messagerie Microsoft">
+<!ENTITY lookout.numver "1.3.04">
+
 <!ENTITY entetes.titre "Impression des entêtes courrier">
 <!ENTITY entetes.reduites "Entêtes réduites">
 <!ENTITY entetes.normales "Entêtes normales (valeur par défaut)">
