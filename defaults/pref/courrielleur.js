@@ -23,7 +23,7 @@ pref("commentaires.trace", false);
 pref("courrielleur.mimeTypesRdf", false);
 
 // liste des ministères (libellés séparés par ';')
-pref("courrielleur.listeministeres", "Ministère de la Transition écologique et solidaire;Ministère de la Cohésion des territoires et des Relations avec les collectivités territoriales;Ministère de l'Agriculture et de l'Alimentation");
+pref("courrielleur.listeministeres", "Ministère de la Transition écologique;Ministère de la Cohésion des territoires et des Relations avec les collectivités territoriales;Ministère de l'Agriculture et de l'Alimentation");
 // autres libelles ministeres  pour ajout
 pref("courrielleur.autresministeres", "");
 
