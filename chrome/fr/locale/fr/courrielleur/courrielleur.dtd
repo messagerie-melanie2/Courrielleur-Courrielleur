@@ -4,9 +4,8 @@
 <!ENTITY courrielleur.apropos.text3 "Publié le : &courrielleur.datever;">
 <!ENTITY courrielleur.libapropos "À propos du Courrielleur Mél">
 <!ENTITY courrielleur.aproposkey "C">
-<!ENTITY courrielleur.numver "8.6.0">
-<!ENTITY courrielleur.datever "12/10/2021">
-
+<!ENTITY courrielleur.numver "8.6.1">
+<!ENTITY courrielleur.datever "14/10/2021">
 
 <!ENTITY courrielleur.stministere "">
 <!ENTITY courrielleur.produitpar "produit par : SG/SNUM/UNI/DETN (Département environnement de travail numérique)">
@@ -30,7 +29,6 @@
 <!ENTITY courrielleur.versigne "0.3.1">
 
 <!ENTITY courrielleur.bulleaide "Aller à la page état de Mél">
-
 
 <!ENTITY btMelanissimo.lib "Mélanissimo">
 <!ENTITY btMelanissimo.bulle "Créer un nouveau message avec Mélanissimo">
