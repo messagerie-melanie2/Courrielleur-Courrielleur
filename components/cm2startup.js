@@ -28,6 +28,7 @@ function Cm2Startup() {
   let startTime=Services.startup.getStartupInfo().process.getTime();
   Services.prefs.setIntPref("courrielleur.startlog", 0);
   Services.prefs.setCharPref("courrielleur.startTime", startTime);
+  Services.prefs.setIntPref("mail.identity.timestamp_envoi_differe", 0);
 
   this.init();
 }

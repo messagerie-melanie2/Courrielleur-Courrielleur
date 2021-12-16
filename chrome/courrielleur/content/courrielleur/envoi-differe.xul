@@ -8,17 +8,18 @@
 <!-- dialog containing a control requiring initial setup-->
 <!--onload = "Startup()""return doDefault();""return CancelSpellCheck();"-->
 <dialog id="senddif-dialog"
-    buttons="extra1,extra2"
-    buttonlabelextra1="Désactiver la remise différée"
+    buttons="accept,extra1,extra2"
+    buttonpack="center"
+    buttonlabelaccept="Désactiver"
+    buttonlabelextra1="Désactiver pour cet envoi"
     buttonlabelextra2="Valider"
+    defaultButton="extra2"
     persist="screenX screenY"
     title="Remise différée de votre message"
     xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
-    
-    ondialogextra1="SendDifRemove();"
+    ondialogaccept="SendDifRemove();"
+    ondialogextra1="SendDifTemporaryRemove();"
     ondialogextra2="SendDifEnable();"
-    height = "300"
-    width = "300"
     onload="SendDifLoad(window.arguments[2]);">
 
   <script type="application/javascript" src="chrome://messenger/content/messengercompose/MsgComposeCommands.js"/>
@@ -119,6 +120,15 @@
       </row>
     </rows>
   </grid>
+  
+  <description id="whitespace" style="white-space: pre-line;">
+  
+  </description>
+  
+  <checkbox label="Conserver la remise différée pour les envois suivants" id="senddif-remember"/>  
+  <description id="senddif-warning" style="white-space: pre-line;">
+    En cochant cette case, la remise différée sera conservée pour les prochains envois, jusqu'à ce qu'elle soit désactivée ou que la date choisie soit dépassée.
+  </description>
   
   <description id="senddif-warning" style="color: red;">
   
