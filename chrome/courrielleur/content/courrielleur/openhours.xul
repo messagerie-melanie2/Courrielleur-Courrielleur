@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+  
+<?xml-stylesheet href="chrome://editor/skin/editor.css" type="text/css"?> 
+<?xml-stylesheet href="chrome://editor/skin/EditorDialog.css" type="text/css"?>
+<?xml-stylesheet type="text/css" href="chrome://calendar/content/datetimepickers/datetimepickers.css"?>
+<!DOCTYPE dialog SYSTEM "chrome://courrielleur/locale/courrielleur.dtd">
+
+<!-- dialog containing a control requiring initial setup-->
+<!--onload = "Startup()""return doDefault();""return CancelSpellCheck();"-->
+<dialog id="openhours-dialog"
+    buttons="accept,extra1,extra2"
+    buttonpack="center"
+    buttonlabelaccept="Continuer en activant la remise différée"
+    buttonlabelextra1="Fermer"
+    buttonlabelextra2="Continuer"
+    defaultButton="extra2"
+    persist="screenX screenY"
+    title="Droit à la déconnexion"
+    xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+    
+    ondialogaccept="OpenHoursActivate();"
+    ondialogextra1="OpenHoursClose();"
+    ondialogextra2="OpenHoursContinue();">
+
+  <script type="application/javascript" src="chrome://messenger/content/messengercompose/MsgComposeCommands.js"/>
+  <script type="application/javascript" src="chrome://editor/content/editorUtilities.js"/>
+  <script type="application/javascript" src="chrome://editor/content/EdDialogCommon.js"/>
+  <script type="application/javascript" src="chrome://communicator/content/utilityOverlay.js"/>
+  <script type="application/javascript" src="chrome://editor/content/EdSpellCheck.js"/>
+  <script type="application/javascript" src="chrome://global/content/contentAreaUtils.js"/>
+  <script type="application/javascript" src="chrome://calendar/content/calendar-event-dialog-recurrence.js"/>
+  <script type="application/javascript" src="chrome://calendar/content/calendar-dialog-utils.js"/>
+  <script type="application/javascript" src="chrome://calendar/content/calendar-ui-utils.js"/>
+  <script type="application/javascript" src="chrome://calendar/content/calendar-statusbar.js"/>
+
+  
+
+  <broadcaster id="args" value=""/>
+
+  <stringbundle id="languageBundle" src="chrome://global/locale/languageNames.properties"/>
+  <stringbundle id="regionBundle" src="chrome://global/locale/regionNames.properties"/>
+
+  <description id="openhours-title" style="white-space: pre-line; font-weight:bold;">
+    Vous travaillez actuellement durant une heure non ouvrée, pensez à respecter le droit à la deconnexion de votre correspondant, pour cela utilisez la remise différée des messages.
+  </description>
+  
+  <description id="openhours-label" style="white-space: pre-line;">
+    Vous avez la possibilité de quitter Mel mais également de continuer votre travail :
+     
+      - Soit en passant en mode différé, chaque message sera remis à son destinataire
+     à la prochaine heure ouvrée et respectera ainsi son droit à la déconnexion.
+      
+      - Soit en continuant d'envoyer vos messages en temps réel,
+     sans respecter le droit à la déconnexion de votre correspondant.
+     
+    Toutefois, l'envoi d'un courriel urgent est possible en désactivant ponctuellement la remise différée.
+  </description>  
+</dialog>
