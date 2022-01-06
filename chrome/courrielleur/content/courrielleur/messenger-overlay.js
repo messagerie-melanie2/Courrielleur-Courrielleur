@@ -152,22 +152,26 @@ function cm2InitBoutonsOnglet() {
   let bundle=Services.strings.createBundle("chrome://courrielleur/locale/courrielleur.properties");
 
   let bar=document.getElementById("tabbar-toolbar");
+  
+  // #6367: Erreur console au lancement bar is null
+  if(bar)
+  {
+    let bt1=document.createElement("toolbarbutton");
+    bt1.setAttribute("id", "cm2-tab-abook");
+    bt1.setAttribute("class", "toolbarbutton-1");
+    bt1.setAttribute("oncommand", "OuvreEnOnglet('chrome://messenger/content/addressbook/addressbook.xul', 'cm2-tab-abook');");
+    bt1.setAttribute("tooltiptext", bundle.GetStringFromName("cm2tab.abook.label"));
 
-  let bt1=document.createElement("toolbarbutton");
-  bt1.setAttribute("id", "cm2-tab-abook");
-  bt1.setAttribute("class", "toolbarbutton-1");
-  bt1.setAttribute("oncommand", "OuvreEnOnglet('chrome://messenger/content/addressbook/addressbook.xul', 'cm2-tab-abook');");
-  bt1.setAttribute("tooltiptext", bundle.GetStringFromName("cm2tab.abook.label"));
+    bar.appendChild(bt1, null);
 
-  bar.appendChild(bt1, null);
+    let bt2=document.createElement("toolbarbutton");
+    bt2.setAttribute("id", "cm2-tab-anais");
+    bt2.setAttribute("class", "toolbarbutton-1");
+    bt2.setAttribute("oncommand", "OuvreEnOnglet('chrome://anais/content/anaismozdlg.xul', 'cm2-tab-anais');");
+    bt2.setAttribute("tooltiptext", bundle.GetStringFromName("cm2tab.anais.label"));
 
-  let bt2=document.createElement("toolbarbutton");
-  bt2.setAttribute("id", "cm2-tab-anais");
-  bt2.setAttribute("class", "toolbarbutton-1");
-  bt2.setAttribute("oncommand", "OuvreEnOnglet('chrome://anais/content/anaismozdlg.xul', 'cm2-tab-anais');");
-  bt2.setAttribute("tooltiptext", bundle.GetStringFromName("cm2tab.anais.label"));
-
-  bar.appendChild(bt2, null);
+    bar.appendChild(bt2, null);
+  }
 }
 
 function OuvreEnOnglet(chromeurl, typeonglet) {
