@@ -7,7 +7,7 @@ var gUrlsCourrielleur=new Array();
 gUrlsCourrielleur["courrielleur.urlmelanissimo"]="https://melanissimo-ng.din.developpement-durable.gouv.fr";
 gUrlsCourrielleur["courrielleur.infosmaj"]="http://intra.pssi.sg.e2.rie.gouv.fr/dispositif-de-communication-r1259.html";
 gUrlsCourrielleur["courrielleur.aide"]="https://melanie2web.din.developpement-durable.gouv.fr/aide";
-gUrlsCourrielleur["courrielleur.notesversion"]="http://pne.metier.e2.rie.gouv.fr/spip.php?page=article&id_article=1692";
+gUrlsCourrielleur["courrielleur.notesversion"]="http://numerique.metier.e2.rie.gouv.fr/courrielleur-mel-version-8-5-a1872.html";
 gUrlsCourrielleur["courrielleur.nouveautes"]="http://intra.pssi.sg.e2.rie.gouv.fr/dispositif-de-communication-r1259.html";
 gUrlsCourrielleur["courrielleur.urlagenda"]="https://mel.din.developpement-durable.gouv.fr/";
 
