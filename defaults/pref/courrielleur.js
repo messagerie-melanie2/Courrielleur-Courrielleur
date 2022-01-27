@@ -33,9 +33,9 @@ pref("courrielleur.libouvrage", "SG/SPSSI/PSI2 Bureau des infrastructures");
 pref("courrielleur.liboeuvre", "SG/SPSSI/CPII Pôle national d'expertise Annuaire et Messagerie");
 
 //url de l'option de menu notes de version
-pref("courrielleur.notesversion", "http://numerique.metier.e2.rie.gouv.fr/courrielleur-mel-version-8-5-a1872.html");
+pref("courrielleur.notesversion", "http://courrielleur.s2.m2.e2.rie.gouv.fr/changelog.html");
 //url de l'option de menu nouveautes
-pref("courrielleur.nouveautes", "http://intra.pssi.sg.e2.rie.gouv.fr/dispositif-de-communication-r1259.html");
+pref("courrielleur.nouveautes", "http://numerique.metier.e2.rie.gouv.fr/courrielleur-mel-version-8-5-a1872.html");
 
 //url FAQ Informaticiens
 pref("courrielleur.cm2lienfaq", "http://pne.metier.e2.rie.gouv.fr/faq-messagerie-r454.html");
