@@ -1,5 +1,5 @@
 /*
-* Courrielleur Melanie2 - composant pour l'affichage de l'ecran de demarrage
+* Courrielleur Mel - composant pour l'affichage de l'ecran de demarrage
 *
 */
 

@@ -4,8 +4,8 @@
 <!ENTITY courrielleur.apropos.text3 "Publié le : &courrielleur.datever;">
 <!ENTITY courrielleur.libapropos "À propos du Courrielleur Mél">
 <!ENTITY courrielleur.aproposkey "C">
-<!ENTITY courrielleur.numver "8.6.4T1">
-<!ENTITY courrielleur.datever "18/02/2022">
+<!ENTITY courrielleur.numver "8.6.4T2">
+<!ENTITY courrielleur.datever "21/03/2022">
 
 <!ENTITY courrielleur.stministere "">
 <!ENTITY courrielleur.produitpar "produit par : SG/SNUM/UNI/DETN (Département environnement de travail numérique)">
@@ -19,7 +19,7 @@
 <!ENTITY courrielleur.libanais "Anais">
 <!ENTITY courrielleur.libarchibald "Archibald">
 <!ENTITY courrielleur.libpacome "Pacome">
-<!ENTITY courrielleur.libcommentaires "Commentaires">
+<!ENTITY courrielleur.libcommentaires "C1ommentaires">
 <!ENTITY courrielleur.libkiddo "Armel">
 <!ENTITY courrielleur.libcontacts "Contacts">
 <!ENTITY courrielleur.libcm2m2ssimo "Mélanissimo">
