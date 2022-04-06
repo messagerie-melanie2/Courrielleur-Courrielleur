@@ -57,6 +57,15 @@ const cm2ConfigCerts=[
   {fichier:"IGCAACracineEtatfrancais.pem",
     commonName:"IGC/A AC racine Etat francais",
     sha256Fingerprint:"BB:39:1F:02:F2:FC:A3:14:E3:4D:CA:14:91:1C:04:43:D7:3B:AA:64:91:21:39:D6:76:D5:2A:98:5E:72:DF:CD"},
+    
+    
+    {fichier:"ac-serveur-authentification-v1.pem",
+    commonName:"AC Serveur authentification v1",
+    sha256Fingerprint:"79:A1:C9:10:20:7C:63:A9:87:56:41:C3:95:5C:CD:13:41:33:8A:5C:5E:BD:82:76:84:6F:8D:2B:3C:E1:67:27"},
+    {fichier:"acr-ministere-interieur-2018.pem",
+    commonName:"ACR Ministere interieur 2018",
+    sha256Fingerprint:"CB:FB:D7:C8:60:BD:12:12:64:7B:A9:2A:68:7A:37:28:8C:BD:8F:B7:FA:7E:18:18:CD:B2:24:B7:FF:10:60:8A"},
+    
 ];
 
 
