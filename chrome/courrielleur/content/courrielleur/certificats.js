@@ -51,6 +51,17 @@ const cm2ConfigCerts=[
     commonName:"Autorité de Certification Racine ANTS Interne V3",
     sha256Fingerprint:"1F:BB:9D:F0:74:31:69:CD:05:78:C9:76:F3:33:AB:44:83:21:28:64:DC:86:0C:7C:AE:0F:30:1D:8D:02:45:DE"},
 
+  // #5399: Ajout de la nouvelle autorité de certification ANTS
+  {fichier:"ACR-ANTS-A-V3-SN2_20211208.pem",
+    commonName:"Autorité de Certification Racine ANTS Interne V3-SN2_20211208",
+    sha256Fingerprint:"0B:D4:57:6B:3E:7E:9E:D4:E4:3D:B0:C2:04:34:FE:EC:5D:59:8E:1B:31:F7:FB:F0:2A:5B:3D:27:49:6C:F6:15"},
+  {fichier:"ANTS-AAE-SN4_20211208.pem",
+    commonName:"Autorité de Certification Racine ANTS Interne AAE-SN4_20211208",
+    sha256Fingerprint:"E6:CD:52:67:57:7D:F6:C6:36:F8:DB:CD:FA:3B:C2:04:31:00:35:BE:15:B8:F6:9A:E6:68:7F:39:EE:C9:26:4E"},
+  {fichier:"ANTS-SA-SN4_20211208.pem",
+    commonName:"Autorité de Certification Racine ANTS Interne SA-SN4_20211208",
+    sha256Fingerprint:"B3:E0:E8:F7:8A:92:DF:D7:4F:AB:A5:D7:C2:4B:BE:BC:62:3E:C7:B6:74:99:50:08:10:35:85:91:EF:BE:62:98"},
+    
   {fichier:"AC-ANTSv3-Racine-IGCA.pem",
     commonName:"Autorité de Certification Racine ANTS/A V3",
     sha256Fingerprint:"61:9B:7B:96:34:CA:83:04:EE:D0:05:4D:BA:43:C1:F7:5E:7B:50:18:6B:BA:71:25:07:1C:93:59:65:AB:48:3A"},
