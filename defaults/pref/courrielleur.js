@@ -4,7 +4,7 @@
 pref("courrielleur.urlmaj", "https://majcm2.m2.e2.rie.gouv.fr/majcm2.php?prd=%PRODUCT%&ver=%VERSION%&buildid=%BUILD_ID%&buildtarget=%BUILD_TARGET%&loc=%LOCALE%&channel=%CHANNEL%&os_version=%OS_VERSION%&distribution=%DISTRIBUTION%&distribution_version=%DISTRIBUTION_VERSION%&cm2=%CM2_VERSION%");
 
 //numéro de version du courrielleur
-pref("courrielleur.version", "8.6.4T4");
+pref("courrielleur.version", "8.6.4");
 
 
 pref("agenda.webint", false);
@@ -23,7 +23,7 @@ pref("commentaires.trace", false);
 pref("courrielleur.mimeTypesRdf", false);
 
 // liste des ministères (libellés séparés par ';')
-pref("courrielleur.listeministeres", "Ministère de la Transition écologique;Ministère de la Cohésion des territoires et des Relations avec les collectivités territoriales;Ministère de l'Agriculture et de l'Alimentation");
+pref("courrielleur.listeministeres", "Ministère de la Transition énergétique;Ministère de la Transition écologique et de la Cohésion des territoires;Ministère de l'Agriculture et de la Souveraineté alimentaire");
 // autres libelles ministeres  pour ajout
 pref("courrielleur.autresministeres", "");
 
