@@ -14,7 +14,7 @@ const CERT_TRUST="C,C,C";
 
 //preference version certificat
 const PREF_VERSION_CERTIFICAT="courrielleur.versioncert";
-const VERSION_CERTIFICAT=81;
+const VERSION_CERTIFICAT=91;
 
 
 //emplacement fichier : chrome://courrielleur/content/certs/
@@ -51,23 +51,38 @@ const cm2ConfigCerts=[
     commonName:"Autorité de Certification Racine ANTS Interne V3",
     sha256Fingerprint:"1F:BB:9D:F0:74:31:69:CD:05:78:C9:76:F3:33:AB:44:83:21:28:64:DC:86:0C:7C:AE:0F:30:1D:8D:02:45:DE"},
 
-  // #5399: Ajout de la nouvelle autorité de certification ANTS
-  {fichier:"ACR-ANTS-A-V3-SN2_20211208.pem",
-    commonName:"Autorité de Certification Racine ANTS Interne V3-SN2_20211208",
-    sha256Fingerprint:"0B:D4:57:6B:3E:7E:9E:D4:E4:3D:B0:C2:04:34:FE:EC:5D:59:8E:1B:31:F7:FB:F0:2A:5B:3D:27:49:6C:F6:15"},
-  {fichier:"ANTS-AAE-SN4_20211208.pem",
-    commonName:"Autorité de Certification Racine ANTS Interne AAE-SN4_20211208",
-    sha256Fingerprint:"E6:CD:52:67:57:7D:F6:C6:36:F8:DB:CD:FA:3B:C2:04:31:00:35:BE:15:B8:F6:9A:E6:68:7F:39:EE:C9:26:4E"},
-  {fichier:"ANTS-SA-SN4_20211208.pem",
-    commonName:"Autorité de Certification Racine ANTS Interne SA-SN4_20211208",
-    sha256Fingerprint:"B3:E0:E8:F7:8A:92:DF:D7:4F:AB:A5:D7:C2:4B:BE:BC:62:3E:C7:B6:74:99:50:08:10:35:85:91:EF:BE:62:98"},
-    
   {fichier:"AC-ANTSv3-Racine-IGCA.pem",
     commonName:"Autorité de Certification Racine ANTS/A V3",
     sha256Fingerprint:"61:9B:7B:96:34:CA:83:04:EE:D0:05:4D:BA:43:C1:F7:5E:7B:50:18:6B:BA:71:25:07:1C:93:59:65:AB:48:3A"},
   {fichier:"IGCAACracineEtatfrancais.pem",
     commonName:"IGC/A AC racine Etat francais",
     sha256Fingerprint:"BB:39:1F:02:F2:FC:A3:14:E3:4D:CA:14:91:1C:04:43:D7:3B:AA:64:91:21:39:D6:76:D5:2A:98:5E:72:DF:CD"},
+    
+  // #5399: Ajout de la nouvelle autorité de certification ANTS
+  {fichier:"ACR-ANTS-A-V3-SN2_20211208.pem",
+    commonName:"Autorité de Certification Racine ANTS Interne V3-SN2-20211208",
+    sha256Fingerprint:"0B:D4:57:6B:3E:7E:9E:D4:E4:3D:B0:C2:04:34:FE:EC:5D:59:8E:1B:31:F7:FB:F0:2A:5B:3D:27:49:6C:F6:15"},
+  {fichier:"ANTS-AAE-SN4_20211208.pem",
+    commonName:"Autorité de Certification Racine ANTS Interne AAE-SN4-20211208",
+    sha256Fingerprint:"E6:CD:52:67:57:7D:F6:C6:36:F8:DB:CD:FA:3B:C2:04:31:00:35:BE:15:B8:F6:9A:E6:68:7F:39:EE:C9:26:4E"},
+  {fichier:"ANTS-SA-SN4_20211208.pem",
+    commonName:"Autorité de Certification Racine ANTS Interne SA-SN4-20211208",
+    sha256Fingerprint:"B3:E0:E8:F7:8A:92:DF:D7:4F:AB:A5:D7:C2:4B:BE:BC:62:3E:C7:B6:74:99:50:08:10:35:85:91:EF:BE:62:98"}, 
+  
+  //#6813: Ajout de certificats pour le MASA
+  {fichier:"AC_AGENTS.pem",
+    commonName:"AC_AGENTS",
+    sha256Fingerprint:"AE:69:2A:1F:BD:9E:0E:B1:84:3B:D9:47:03:34:29:57:FF:DF:B7:82:6C:FB:35:B1:00:B4:E0:F7:E5:7F:AB:99"},
+  {fichier:"AC_RACINE_AGRICULTURE.pem",
+    commonName:"AC_RACINE_AGRICULTURE",
+    sha256Fingerprint:"2E:C7:C7:B0:30:5D:24:2B:7C:0E:C6:5F:BC:D6:18:4B:B1:40:1D:B6:4E:10:91:E6:40:B8:65:D4:B1:1E:00:2B"},
+  {fichier:"AC_SERVEURS.pem",
+    commonName:"AC_SERVEURS",
+    sha256Fingerprint:"F7:1E:02:15:81:0D:8B:43:DB:98:A2:C7:92:D3:DD:BC:2B:8C:77:B5:30:94:0B:C3:E0:F4:66:D9:D4:5A:A2:19"},
+  {fichier:"AC_USAGERS.pem",
+    commonName:"AC_USAGERS",
+    sha256Fingerprint:"44:74:29:6F:75:48:FF:40:E1:79:0D:C4:19:37:72:6D:A7:F1:90:7D:6F:9C:0F:DA:A8:94:87:87:59:99:D9:90"},
+  
 ];
 
 
