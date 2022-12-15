@@ -82,4 +82,5 @@ pref("courrielleur.testimap.delai", 10);
 // si false fonction inactive
 pref("courrielleur.testimap.startup", false);
 // 0005592: Ouverture de Discussion : Ne plus utiliser les WebApps
-pref("courrielleur.url.discussion", "https://mel.din.developpement-durable.gouv.fr/?_task=discussion");
+//#7414: Ouvrir le BNum à la place du MelWeb pour l'item Discussion
+pref("courrielleur.url.discussion", "https://mel.din.developpement-durable.gouv.fr/bureau/?_task=chat");
