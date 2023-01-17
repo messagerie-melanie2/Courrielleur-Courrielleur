@@ -4,8 +4,8 @@
 <!ENTITY courrielleur.apropos.text3 "Publié le : &courrielleur.datever;">
 <!ENTITY courrielleur.libapropos "À propos du Courrielleur Mél">
 <!ENTITY courrielleur.aproposkey "C">
-<!ENTITY courrielleur.numver "8.7.0T4">
-<!ENTITY courrielleur.datever "17/12/2022">
+<!ENTITY courrielleur.numver "8.7.0T5">
+<!ENTITY courrielleur.datever "20/01/2023">
 
 <!ENTITY courrielleur.stministere "">
 <!ENTITY courrielleur.produitpar "produit par : SG/DNUM/UNI/DETN (Département environnement de travail numérique)">
