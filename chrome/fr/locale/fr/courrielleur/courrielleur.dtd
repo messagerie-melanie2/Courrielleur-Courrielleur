@@ -1,14 +1,14 @@
-<!ENTITY courrielleur.apropos.titre "À propos du Courrielleur Mél">
-<!ENTITY courrielleur.apropos.text1 "Courrielleur Mél">
+<!ENTITY courrielleur.apropos.titre "À propos du Courrielleur MCE">
+<!ENTITY courrielleur.apropos.text1 "Courrielleur MCE">
 <!ENTITY courrielleur.apropos.text2 "Version : &courrielleur.numver;">
 <!ENTITY courrielleur.apropos.text3 "Publié le : &courrielleur.datever;">
-<!ENTITY courrielleur.libapropos "À propos du Courrielleur Mél">
+<!ENTITY courrielleur.libapropos "À propos du Courrielleur MCE">
 <!ENTITY courrielleur.aproposkey "C">
-<!ENTITY courrielleur.numver "8.7.0T5">
+<!ENTITY courrielleur.numver "8.7.0">
 <!ENTITY courrielleur.datever "20/01/2023">
 
 <!ENTITY courrielleur.stministere "">
-<!ENTITY courrielleur.produitpar "produit par : SG/DNUM/UNI/DETN (Département environnement de travail numérique)">
+<!ENTITY courrielleur.produitpar "">
 
 <!ENTITY courrielleur.extension "Composant">
 <!ENTITY courrielleur.descext "Description">
@@ -66,7 +66,7 @@
 
 
 <!-- infos mise a jour -->
-<!ENTITY cm2titremaj "Le Courrielleur Mél a été mis à jour avec succès">
+<!ENTITY cm2titremaj "Le Courrielleur MCE a été mis à jour avec succès">
 <!ENTITY cm2libmaj "Cliquer sur le lien suivant pour consulter les informations de mise à jour:">
 <!ENTITY cm2lienmaj "Détails">
 

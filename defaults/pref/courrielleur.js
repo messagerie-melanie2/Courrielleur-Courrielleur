@@ -24,7 +24,7 @@ pref("courrielleur.mimeTypesRdf", false);
 
 //#6794: Mettre à jour les noms des ministères dans la 8.6.5
 // liste des ministères (libellés séparés par ';')
-pref("courrielleur.listeministeres", "Ministère de la Transition écologique et de la Cohésion des territoires;Ministère de l'Agriculture et de la Souveraineté alimentaire;Ministère de la Transition énergétique");
+pref("courrielleur.listeministeres", "");
 // autres libelles ministeres  pour ajout
 pref("courrielleur.autresministeres", "");
 
