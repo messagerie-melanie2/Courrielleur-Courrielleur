@@ -1,8 +1,8 @@
-<!ENTITY courrielleur.apropos.titre "À propos du Courrielleur Mél">
-<!ENTITY courrielleur.apropos.text1 "Courrielleur Mél">
+<!ENTITY courrielleur.apropos.titre "À propos du Courrielleur MCE">
+<!ENTITY courrielleur.apropos.text1 "Courrielleur MCE">
 <!ENTITY courrielleur.apropos.text2 "Version : &courrielleur.numver;">
 <!ENTITY courrielleur.apropos.text3 "Publié le : &courrielleur.datever;">
-<!ENTITY courrielleur.libapropos "À propos du Courrielleur Mél">
+<!ENTITY courrielleur.libapropos "À propos du Courrielleur MCE">
 <!ENTITY courrielleur.aproposkey "C">
 <!ENTITY courrielleur.numver "8.7.0">
 <!ENTITY courrielleur.datever "27/01/2023">
@@ -28,13 +28,13 @@
 <!ENTITY courrielleur.descsigne "Insérer une signature">
 <!ENTITY courrielleur.versigne "0.3.1">
 
-<!ENTITY courrielleur.bulleaide "Aller à la page état de Mél">
+<!ENTITY courrielleur.bulleaide "Aller à la page état de MCE">
 
 <!ENTITY btMelanissimo.lib "Mélanissimo">
 <!ENTITY btMelanissimo.bulle "Créer un nouveau message avec Mélanissimo">
 
-<!ENTITY btAgenda.lib "Ouvrir Mél dans un navigateur">
-<!ENTITY btAgenda.bulle "Accès à Mél web et à Mon compte">
+<!ENTITY btAgenda.lib "Ouvrir MCE dans un navigateur">
+<!ENTITY btAgenda.bulle "Accès à MCE web et à Mon compte">
 
 <!ENTITY courrielleur.lienfic.lib "Insérer un lien sur un fichier...">
 <!ENTITY courrielleur.lienfic.accesskey "f">
@@ -45,7 +45,7 @@
 <!ENTITY courrielleur.descredir "Rediriger les messages sélectionnés">
 <!ENTITY courrielleur.verredir "0.8.6">
 
-<!ENTITY courrielleur.libcal "Agenda Mél">
+<!ENTITY courrielleur.libcal "Agenda MCE">
 <!ENTITY courrielleur.cal.tooltip "Agenda intégré dans le courrielleur">
 <!ENTITY courrielleur.vercal "4.0">
 
@@ -66,7 +66,7 @@
 
 
 <!-- infos mise a jour -->
-<!ENTITY cm2titremaj "Le Courrielleur Mél a été mis à jour avec succès">
+<!ENTITY cm2titremaj "Le Courrielleur MCE a été mis à jour avec succès">
 <!ENTITY cm2libmaj "Cliquer sur le lien suivant pour consulter les informations de mise à jour:">
 <!ENTITY cm2lienmaj "Détails">
 
