@@ -268,17 +268,17 @@ function cm2MajExceptions(){
     CourrielleurTrace("Mise a jour network.proxy.no_proxies_on (exceptions courrielleur)");
     
     if (null==except || ""==except){
-      Services.prefs.setCharPref("network.proxy.no_proxies_on", ".din.developpement-durable.gouv.fr,.s2.m2.e2.rie.gouv.fr");
+      Services.prefs.setCharPref("network.proxy.no_proxies_on", ".si.minint.fr,.mce.si.minint.fr");
     } else {
-      //.din.developpement-durable.gouv.fr
-      let pos=except.indexOf(".din.developpement-durable.gouv.fr");
+      //.si.minint.fr
+      let pos=except.indexOf(".si.minint.fr");
       if (-1==pos){
-        except+=",.din.developpement-durable.gouv.fr";
+        except+=".si.minint.fr";
       }
-      //.s2.m2.e2.rie.gouv.fr
-      pos=except.indexOf(".s2.m2.e2.rie.gouv.fr");
+      //.mce.si.minint.fr
+      pos=except.indexOf(".mce.si.minint.fr");
       if (-1==pos){
-        except+=",.s2.m2.e2.rie.gouv.fr";
+        except+=",.mce.si.minint.fr";
       }
       Services.prefs.setCharPref("network.proxy.no_proxies_on", except);
     }

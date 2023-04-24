@@ -7,8 +7,8 @@
 <!ENTITY courrielleur.numver "8.7.0">
 <!ENTITY courrielleur.datever "27/01/2023">
 
-<!ENTITY courrielleur.stministere "">
-<!ENTITY courrielleur.produitpar "produit par : SG/DNUM/UNI/DETN (Département environnement de travail numérique)">
+<!ENTITY courrielleur.stministere "Ministère de l'Intérieur">
+<!ENTITY courrielleur.produitpar "produit par : SG/DNUM/SDCAST/BST (Bureau des services transverses)">
 
 <!ENTITY courrielleur.extension "Composant">
 <!ENTITY courrielleur.descext "Description">

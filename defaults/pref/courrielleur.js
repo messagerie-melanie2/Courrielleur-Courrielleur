@@ -24,14 +24,14 @@ pref("courrielleur.mimeTypesRdf", false);
 
 //#6794: Mettre à jour les noms des ministères dans la 8.6.5
 // liste des ministères (libellés séparés par ';')
-pref("courrielleur.listeministeres", "Ministère de la Transition écologique et de la Cohésion des territoires;Ministère de l'Agriculture et de la Souveraineté alimentaire;Ministère de la Transition énergétique");
+pref("courrielleur.listeministeres", "Ministère de l'Intérieur");
 // autres libelles ministeres  pour ajout
 pref("courrielleur.autresministeres", "");
 
 //libelle maitrise d'ouvrage des boites a propos
-pref("courrielleur.libouvrage", "SG/SPSSI/PSI2 Bureau des infrastructures");
+pref("courrielleur.libouvrage", "SG/DNUM/SDCAST/BST Bureau des services transverses");
 //libelle maitrise d'oeuvre des boites a propos
-pref("courrielleur.liboeuvre", "SG/SPSSI/CPII Pôle national d'expertise Annuaire et Messagerie");
+pref("courrielleur.liboeuvre", "SG/DNUM/SDCAST/BST Bureau des services transverses");
 
 //url de l'option de menu notes de version
 pref("courrielleur.notesversion", "http://courrielleur.s2.m2.e2.rie.gouv.fr/changelog.html");
@@ -52,7 +52,7 @@ pref("courrielleur.aide", "https://melanie2web.din.developpement-durable.gouv.fr
 pref("courrielleur.proxy.amande", "(.e2.rie.gouv.fr|.i2)");
 
 //url melanie2web
-pref("courrielleur.urlagenda", "https://mel.din.developpement-durable.gouv.fr/");
+pref("courrielleur.urlagenda", "https://mceweb2.si.minint.fr/?_task=calendar");
 
 //url melanissimo (bouton)
 pref("courrielleur.urlmelanissimo", "https://melanissimo-ng.din.developpement-durable.gouv.fr");
