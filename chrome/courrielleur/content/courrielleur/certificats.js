@@ -68,21 +68,15 @@ const cm2ConfigCerts=[
   {fichier:"ANTS-SA-SN4_20211208.pem",
     commonName:"Autorité de Certification Racine ANTS Interne SA-SN4-20211208",
     sha256Fingerprint:"B3:E0:E8:F7:8A:92:DF:D7:4F:AB:A5:D7:C2:4B:BE:BC:62:3E:C7:B6:74:99:50:08:10:35:85:91:EF:BE:62:98"}, 
-  
-  //#6813: Ajout de certificats pour le MASA
-  {fichier:"AC_AGENTS.pem",
-    commonName:"AC_AGENTS",
-    sha256Fingerprint:"AE:69:2A:1F:BD:9E:0E:B1:84:3B:D9:47:03:34:29:57:FF:DF:B7:82:6C:FB:35:B1:00:B4:E0:F7:E5:7F:AB:99"},
-  {fichier:"AC_RACINE_AGRICULTURE.pem",
-    commonName:"AC_RACINE_AGRICULTURE",
-    sha256Fingerprint:"2E:C7:C7:B0:30:5D:24:2B:7C:0E:C6:5F:BC:D6:18:4B:B1:40:1D:B6:4E:10:91:E6:40:B8:65:D4:B1:1E:00:2B"},
-  {fichier:"AC_SERVEURS.pem",
-    commonName:"AC_SERVEURS",
-    sha256Fingerprint:"F7:1E:02:15:81:0D:8B:43:DB:98:A2:C7:92:D3:DD:BC:2B:8C:77:B5:30:94:0B:C3:E0:F4:66:D9:D4:5A:A2:19"},
-  {fichier:"AC_USAGERS.pem",
-    commonName:"AC_USAGERS",
-    sha256Fingerprint:"44:74:29:6F:75:48:FF:40:E1:79:0D:C4:19:37:72:6D:A7:F1:90:7D:6F:9C:0F:DA:A8:94:87:87:59:99:D9:90"},
-  
+ 
+	// Ministere Interieur
+	{fichier:"ac-serveur-authentification-v1.pem",
+	commonName:"AC Serveur authentification v1",
+	sha256Fingerprint:"79:A1:C9:10:20:7C:63:A9:87:56:41:C3:95:5C:CD:13:41:33:8A:5C:5E:BD:82:76:84:6F:8D:2B:3C:E1:67:27"},
+	{fichier:"acr-ministere-interieur-2018.pem",
+	commonName:"ACR Ministere interieur 2018",
+	sha256Fingerprint:"CB:FB:D7:C8:60:BD:12:12:64:7B:A9:2A:68:7A:37:28:8C:BD:8F:B7:FA:7E:18:18:CD:B2:24:B7:FF:10:60:8A"},
+	
 ];
 
 
