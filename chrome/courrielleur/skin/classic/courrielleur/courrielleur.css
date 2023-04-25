@@ -395,3 +395,11 @@ toolbar[iconsize="small"] #cm2-tab-anais[disabled] {
   list-style-image: url("chrome://courrielleur/skin/mail24.png");
   -moz-image-region: rect(0px 24px 24px 0px);
 }
+
+/* masquer le bouton envoi différé */
+#button-send-dif{
+	display:none;
+}
+#button-send-dif + toolbarseparator{
+	visibility:hidden;
+}
