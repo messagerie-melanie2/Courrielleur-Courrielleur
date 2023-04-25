@@ -19,8 +19,8 @@
   <script type="application/x-javascript" src="chrome://pippki/content/pippki.js"/>
 
   <vbox flex="1">
-  
-    <image src="chrome://courrielleur/skin/loading-image.png"/>
+		
+    <!--<image src="chrome://courrielleur/skin/loading-image.png"/>-->
 
     <hbox flex="1">
       <description class="cm2splash-charge">&cm2splash-charge;</description>
