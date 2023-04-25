@@ -396,10 +396,16 @@ toolbar[iconsize="small"] #cm2-tab-anais[disabled] {
   -moz-image-region: rect(0px 24px 24px 0px);
 }
 
-/* masquer le bouton envoi différé */
+/* [MinInt] : masquer le bouton envoi différé */
 #button-send-dif{
 	display:none;
 }
 #button-send-dif + toolbarseparator{
 	visibility:hidden;
 }
+
+/* [MinInt] : Masquer le bouton discussion */
+#btCMel-discus {
+	display:none;
+}
+
