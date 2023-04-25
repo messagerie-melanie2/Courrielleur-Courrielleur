@@ -6,7 +6,7 @@ ChromeUtils.import("resource://gre/modules/pacomeAuthUtils.jsm");
 var gUrlsCourrielleur=new Array();
 gUrlsCourrielleur["courrielleur.urlmelanissimo"]="https://melanissimo-ng.din.developpement-durable.gouv.fr";
 gUrlsCourrielleur["courrielleur.infosmaj"]="http://numerique.metier.e2.rie.gouv.fr/courrielleur-mel-version-8-5-a1872.html";
-gUrlsCourrielleur["courrielleur.aide"]="https://melanie2web.din.developpement-durable.gouv.fr/aide";
+gUrlsCourrielleur["courrielleur.aide"]="http://messagerie.dsic.minint.fr/";
 gUrlsCourrielleur["courrielleur.notesversion"]="http://courrielleur.s2.m2.e2.rie.gouv.fr/changelog.html";
 gUrlsCourrielleur["courrielleur.nouveautes"]="http://numerique.metier.e2.rie.gouv.fr/courrielleur-mel-version-8-5-a1872.html";
 gUrlsCourrielleur["courrielleur.urlagenda"]="https://mel.din.developpement-durable.gouv.fr/";
