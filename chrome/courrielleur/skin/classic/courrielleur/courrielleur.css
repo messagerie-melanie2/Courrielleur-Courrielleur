@@ -409,3 +409,7 @@ toolbar[iconsize="small"] #cm2-tab-anais[disabled] {
 	display:none;
 }
 
+/* Masquer l'option de menu Melanissimo */
+#btMelanissimo-menu{
+	display:none;
+}
