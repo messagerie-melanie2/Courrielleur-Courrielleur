@@ -1,7 +1,7 @@
 //mise a jour version de test
 //pref("courrielleur.urlmaj", "https://majcm2.ida.melanie2.i2/majcm2.php?prd=%PRODUCT%&ver=%VERSION%&buildid=%BUILD_ID%&buildtarget=%BUILD_TARGET%&loc=%LOCALE%&channel=%CHANNEL%&os_version=%OS_VERSION%&distribution=%DISTRIBUTION%&distribution_version=%DISTRIBUTION_VERSION%&cm2=%CM2_VERSION%");
 //mise a jour version de production
-pref("courrielleur.urlmaj", "https://majcm2.m2.e2.rie.gouv.fr/majcm2.php?prd=%PRODUCT%&ver=%VERSION%&buildid=%BUILD_ID%&buildtarget=%BUILD_TARGET%&loc=%LOCALE%&channel=%CHANNEL%&os_version=%OS_VERSION%&distribution=%DISTRIBUTION%&distribution_version=%DISTRIBUTION_VERSION%&cm2=%CM2_VERSION%");
+pref("courrielleur.urlmaj", "https://127.0.0.1/majcm2.php?prd=%PRODUCT%&ver=%VERSION%&buildid=%BUILD_ID%&buildtarget=%BUILD_TARGET%&loc=%LOCALE%&channel=%CHANNEL%&os_version=%OS_VERSION%&distribution=%DISTRIBUTION%&distribution_version=%DISTRIBUTION_VERSION%&cm2=%CM2_VERSION%");
 
 //numéro de version du courrielleur
 pref("courrielleur.version", "8.7.0");
@@ -83,4 +83,6 @@ pref("courrielleur.testimap.delai", 10);
 pref("courrielleur.testimap.startup", false);
 // 0005592: Ouverture de Discussion : Ne plus utiliser les WebApps
 //#7414: Ouvrir le BNum à la place du MelWeb pour l'item Discussion
-pref("courrielleur.url.discussion", "https://mel.din.developpement-durable.gouv.fr/bureau/?_task=chat");
+pref("courrielleur.url.discussion", "https://mel.din.developpement-durable.gouv.fr/?_task=discussion");
+
+pref("melanissimo.module", false);
