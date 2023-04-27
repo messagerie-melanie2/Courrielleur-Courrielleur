@@ -333,6 +333,12 @@ toolbar[iconsize="small"] #cm2-tab-anais[disabled] {
   text-align:center
 }
 
+
+/* MININT masquer 'Proposer une amélioration' */
+#cm2idees{
+	display:none;
+}
+
 #cm2idees-desc{
   margin-top:12px;
   margin-bottom:12px;  
