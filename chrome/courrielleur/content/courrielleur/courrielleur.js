@@ -255,6 +255,8 @@ function cm2ClearPolicy(){
 */
 function cm2MajExceptions(){
 
+	return;// pas necessaire au minint
+	/*
   try {
 
     let maj=Services.prefs.getBoolPref("courrielleur.majexceptions");
@@ -273,7 +275,7 @@ function cm2MajExceptions(){
       //.si.minint.fr
       let pos=except.indexOf(".si.minint.fr");
       if (-1==pos){
-        except+=".si.minint.fr";
+        except+=",.si.minint.fr";
       }
       //.mce.si.minint.fr
       pos=except.indexOf(".mce.si.minint.fr");
@@ -287,7 +289,7 @@ function cm2MajExceptions(){
     
   } catch(ex){
     CourrielleurTrace("Mise a jour network.proxy.no_proxies_on - erreur:"+ex);
-  }
+  }*/
 }
 
 function cm2BoiteAIdees(){

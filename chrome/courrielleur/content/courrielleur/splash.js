@@ -14,7 +14,8 @@ function startCm2Splash() {
   cm2MajCertificats();
   
   //mantis 0004108: Nouveaux noms : ajouter dynamiquement les exceptions m2 pour les anciens courrielleurs
-  cm2MajExceptions();
+	// pas necessaire au minint
+  //cm2MajExceptions();
 }
 
 
