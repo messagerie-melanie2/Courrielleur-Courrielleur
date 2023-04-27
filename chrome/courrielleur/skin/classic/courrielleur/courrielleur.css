@@ -413,3 +413,28 @@ toolbar[iconsize="small"] #cm2-tab-anais[disabled] {
 #btMelanissimo-menu{
 	display:none;
 }
+
+/* Masquer les options de création de comptes tb */
+#newCreateEmailAccountMenuItem{
+	display:none;
+}
+
+#newMailAccountMenuItem{
+	display:none;
+}
+
+#newIMAccountMenuItem{
+	display:none;
+}
+
+#newFeedAccountMenuItem{
+	display:none;
+}
+
+#newAccountMenuItem{
+	display:none;
+}
+
+#newAccountMenuItem + toolbarseparator{
+	visibility:hidden;
+}
