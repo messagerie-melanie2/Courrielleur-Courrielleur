@@ -444,3 +444,9 @@ toolbar[iconsize="small"] #cm2-tab-anais[disabled] {
 #newAccountMenuItem + toolbarseparator{
 	visibility:hidden;
 }
+
+/* Masquer l'option de menu Rechercher des mises à jour */
+#checkForUpdates, #appmenu_checkForUpdates{
+	display:none;
+}
+
