@@ -87,6 +87,16 @@
 <!ENTITY lookout.desc "Compatibilité avec les outils de messagerie Microsoft">
 <!ENTITY lookout.numver "1.3.04">
 
+<!-- module Quicktext -->
+<!ENTITY courrielleur.libquicktext "Quicktext">
+<!ENTITY lookout.desc "Permet la création de modèles de mail">
+<!ENTITY lookout.numver "1.5">
+
+<!-- module Sendlater -->
+<!ENTITY courrielleur.libsendlater "Envoyer plus tard">
+<!ENTITY lookout.desc "Envoi de courrier différé">
+<!ENTITY lookout.numver "6.5.0">
+
 <!ENTITY entetes.titre "Impression des entêtes courrier">
 <!ENTITY entetes.reduites "Entêtes réduites">
 <!ENTITY entetes.normales "Entêtes normales (valeur par défaut)">
