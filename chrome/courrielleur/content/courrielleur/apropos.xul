@@ -128,13 +128,13 @@
         <!-- module Quicktext -->
         <row class="courrielleur-grille-ligne">
           <label value="&courrielleur.libquicktext;"/>
-          <label value="&lookout.desc;"/>
+          <label value="&quicktext.desc;"/>
         </row>
         
         <!-- module Sendlater -->
         <row class="courrielleur-grille-ligne">
           <label value="&courrielleur.libsendlater;"/>
-          <label value="&lookout.desc;"/>
+          <label value="&sendlater.desc;"/>
         </row>
         
         <!-- Thunderbird -->

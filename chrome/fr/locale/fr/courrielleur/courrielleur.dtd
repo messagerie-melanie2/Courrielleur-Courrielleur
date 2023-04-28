@@ -89,13 +89,13 @@
 
 <!-- module Quicktext -->
 <!ENTITY courrielleur.libquicktext "Quicktext">
-<!ENTITY lookout.desc "Permet la création de modèles de mail">
-<!ENTITY lookout.numver "1.5">
+<!ENTITY quicktext.desc "Permet la création de modèles de mail">
+<!ENTITY quicktext.numver "1.5">
 
 <!-- module Sendlater -->
 <!ENTITY courrielleur.libsendlater "Envoyer plus tard">
-<!ENTITY lookout.desc "Envoi de courrier différé">
-<!ENTITY lookout.numver "6.5.0">
+<!ENTITY sendlater.desc "Envoi de courrier différé">
+<!ENTITY sendlater.numver "6.5.0">
 
 <!ENTITY entetes.titre "Impression des entêtes courrier">
 <!ENTITY entetes.reduites "Entêtes réduites">
