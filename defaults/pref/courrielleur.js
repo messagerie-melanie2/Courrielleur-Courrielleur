@@ -44,14 +44,14 @@ pref("courrielleur.cm2lienfaq", "http://pne.metier.e2.rie.gouv.fr/faq-messagerie
 pref("courrielleur.cm2lientrucs", "http://bureautique.metier.e2.rie.gouv.fr/trucs-et-astuces-r23.html");
 
 //url aide courrielleur
-pref("courrielleur.aide", "https://melanie2web.din.developpement-durable.gouv.fr/aide");
+pref("courrielleur.aide", "https://mel.din.developpement-durable.gouv.fr/aide");
 
 //valeur de test du proxy AMANDE
 //test sur la terminaison du nom du proxy (".i2" => "proxy1.i2" => AMANDE)
 // ".i2" par defaut, ex: proxy1.i2
 pref("courrielleur.proxy.amande", "(.e2.rie.gouv.fr|.i2)");
 
-//url melanie2web
+//url mel web
 pref("courrielleur.urlagenda", "https://mel.din.developpement-durable.gouv.fr/");
 
 //url melanissimo (bouton)
