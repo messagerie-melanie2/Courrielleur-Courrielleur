@@ -14,8 +14,8 @@
   <commandset id="composeCommands">
     <command id="cmd_Cm2InsertLienFic" oncommand="cmdCm2InsertLien('fichier')"/>
     <command id="cmd_Cm2InsertLienDos" oncommand="cmdCm2InsertLien('dossier')"/>
-    <!-- 6165 differe -->
-    <command id="cmd_sendDifButton" oncommand="cmdSendDifButton()"/>
+    <!-- #6165 differe -->
+    <!--<command id="cmd_sendDifButton" oncommand="cmdSendDifButton()"/>-->
   </commandset>
   <!-- menu joindre -->
   <menu id="menu_Attach">

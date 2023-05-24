@@ -24,7 +24,7 @@ pref("courrielleur.mimeTypesRdf", false);
 
 //#6794: Mettre à jour les noms des ministères dans la 8.6.5
 // liste des ministères (libellés séparés par ';')
-pref("courrielleur.listeministeres", "Ministère de la Transition écologique et de la Cohésion des territoires;Ministère de l'Agriculture et de la Souveraineté alimentaire;Ministère de la Transition énergétique");
+pref("courrielleur.listeministeres", "");
 // autres libelles ministeres  pour ajout
 pref("courrielleur.autresministeres", "");
 
@@ -44,7 +44,7 @@ pref("courrielleur.cm2lienfaq", "http://pne.metier.e2.rie.gouv.fr/faq-messagerie
 pref("courrielleur.cm2lientrucs", "http://bureautique.metier.e2.rie.gouv.fr/trucs-et-astuces-r23.html");
 
 //url aide courrielleur
-pref("courrielleur.aide", "https://melanie2web.din.developpement-durable.gouv.fr/aide");
+pref("courrielleur.aide", "http://wiki.sso.gendarmerie.fr/mce/Accueil");
 
 //valeur de test du proxy AMANDE
 //test sur la terminaison du nom du proxy (".i2" => "proxy1.i2" => AMANDE)
@@ -83,4 +83,11 @@ pref("courrielleur.testimap.delai", 10);
 pref("courrielleur.testimap.startup", false);
 // 0005592: Ouverture de Discussion : Ne plus utiliser les WebApps
 //#7414: Ouvrir le BNum à la place du MelWeb pour l'item Discussion
-pref("courrielleur.url.discussion", "https://mel.din.developpement-durable.gouv.fr/bureau/?_task=chat");
+pref("courrielleur.url.discussion", "https://www.tchap.gouv.fr/");
+
+// pas de popup pour pegase et roundcube
+pref("webappsm2.popup.pegase.hide", true);
+pref("webappsm2.popup.roundcube.hide", true);
+// ouverture dans le navigateur pour pegase et roundcube
+pref("webappsm2.popup.pegase.choice", 1);
+pref("webappsm2.popup.roundcube.choice", 1);
