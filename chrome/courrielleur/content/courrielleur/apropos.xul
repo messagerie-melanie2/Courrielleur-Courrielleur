@@ -85,7 +85,12 @@
           <label class="courrielleur-url" value="&courrielleur.libcontacts;" onclick="window.openDialog('chrome://contacts/content/apropos.xul','','chrome,modal,centerscreen,titlebar,resizable=no');"/>
           <label value="&contactsdav.apropos.text1;"/>
         </row>
-
+        <!--
+        <row class="courrielleur-grille-ligne">
+          <label class="courrielleur-url" value="&courrielleur.libcm2m2ssimo;" onclick="window.openDialog('chrome://cm2m2ssimo/content/apropos.xul','','chrome,modal,centerscreen,titlebar,resizable=no');"/>
+          <label value="&cm2m2ssimo.apropos.text1;"/>
+        </row>
+        -->
         <row class="courrielleur-grille-ligne">
           <label class="courrielleur-url" value="&courrielleur.libpacome;" onclick="window.openDialog('chrome://pacome/content/apropos.xul','','chrome,modal,centerscreen,titlebar,resizable=no');"/>
           <label value="&pacome.apropos.text1;"/>
@@ -123,18 +128,6 @@
         <row class="courrielleur-grille-ligne">
           <label value="&courrielleur.liblookout;"/>
           <label value="&lookout.desc;"/>
-        </row>
-        
-        <!-- module Quicktext -->
-        <row class="courrielleur-grille-ligne">
-          <label value="&courrielleur.libquicktext;"/>
-          <label value="&quicktext.desc;"/>
-        </row>
-        
-        <!-- module Sendlater -->
-        <row class="courrielleur-grille-ligne">
-          <label value="&courrielleur.libsendlater;"/>
-          <label value="&sendlater.desc;"/>
         </row>
         
         <!-- Thunderbird -->
