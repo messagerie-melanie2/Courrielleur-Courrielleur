@@ -21,8 +21,10 @@
 %mailredirectDTD;
 <!ENTITY % commentairesDTD SYSTEM "chrome://commentaires/locale/commentaires.dtd">
 %commentairesDTD;
+<!--
 <!ENTITY % m2ssimoDTD SYSTEM "chrome://cm2m2ssimo/locale/cm2m2ssimo.dtd">
 %m2ssimoDTD;
+-->
 ]>
 
 
@@ -87,12 +89,12 @@
           <label class="courrielleur-url" value="&courrielleur.libcontacts;" onclick="window.openDialog('chrome://contacts/content/apropos.xul','','chrome,modal,centerscreen,titlebar,resizable=no');"/>
           <label value="&contactsdav.apropos.text1;"/>
         </row>
-
+<!--
         <row class="courrielleur-grille-ligne">
           <label class="courrielleur-url" value="&courrielleur.libcm2m2ssimo;" onclick="window.openDialog('chrome://cm2m2ssimo/content/apropos.xul','','chrome,modal,centerscreen,titlebar,resizable=no');"/>
           <label value="&cm2m2ssimo.apropos.text1;"/>
         </row>
-
+-->
         <row class="courrielleur-grille-ligne">
           <label class="courrielleur-url" value="&courrielleur.libpacome;" onclick="window.openDialog('chrome://pacome/content/apropos.xul','','chrome,modal,centerscreen,titlebar,resizable=no');"/>
           <label value="&pacome.apropos.text1;"/>
