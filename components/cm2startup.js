@@ -46,7 +46,12 @@ Cm2Startup.prototype = {
     //Services.console.logStringMessage("*** Cm2Startup init");
 
     this.splash=Services.ww.openWindow(null, "chrome://courrielleur/content/splash.xul", "cm2splash",
-                                      "chrome,centerscreen,dialog,titlebar=no",null);
+                                      "chrome,dialog,titlebar=no",null);
+                                          
+	if (null!=this.splash){
+		this.splash.moveTo(this.splash.screen.width, this.splash.screen.height);
+	}
+	
     this.canclose=true;
 
     for (var m in gCm2StartupEvent){
