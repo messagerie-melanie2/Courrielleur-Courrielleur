@@ -39,9 +39,9 @@ pref("courrielleur.notesversion", "http://courrielleur.s2.m2.e2.rie.gouv.fr/chan
 pref("courrielleur.nouveautes", "http://numerique.metier.e2.rie.gouv.fr/courrielleur-mel-version-8-5-a1872.html");
 
 //url FAQ Informaticiens
-pref("courrielleur.cm2lienfaq", "http://pne.metier.e2.rie.gouv.fr/faq-messagerie-r454.html");
+pref("courrielleur.cm2lienfaq", "https://info.messagerie.interieur.rie.gouv.fr/");
 //url Trucs et Astuces du site utilisateurs
-pref("courrielleur.cm2lientrucs", "http://bureautique.metier.e2.rie.gouv.fr/trucs-et-astuces-r23.html");
+pref("courrielleur.cm2lientrucs", "https://info.messagerie.interieur.rie.gouv.fr/");
 
 //url aide courrielleur
 pref("courrielleur.aide", "http://messagerie.dsic.minint.fr/");

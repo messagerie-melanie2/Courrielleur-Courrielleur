@@ -450,3 +450,7 @@ toolbar[iconsize="small"] #cm2-tab-anais[disabled] {
 	display:none;
 }
 
+/* Masquer traquer les indésirables dans ce dossier */
+#appmenu_runJunkControls, #runJunkControls{
+	display:none;
+}
