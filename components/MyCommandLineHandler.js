@@ -75,6 +75,7 @@ function setToken(tokenValue, throwCallbackAtLoginWindow = false)
 
                 // Call the callback function
                 window.authMethodCallbackSSO();
+				window.focus();
               }
           }
   
