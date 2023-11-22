@@ -5,10 +5,10 @@ ChromeUtils.import("resource://gre/modules/pacomeAuthUtils.jsm");
 //Tableau global des liens externes
 var gUrlsCourrielleur=new Array();
 gUrlsCourrielleur["courrielleur.urlmelanissimo"]="https://melanissimo-ng.din.developpement-durable.gouv.fr";
-gUrlsCourrielleur["courrielleur.infosmaj"]="http://numerique.metier.e2.rie.gouv.fr/courrielleur-mel-version-8-5-a1872.html";
+gUrlsCourrielleur["courrielleur.infosmaj"]="http://numerique.metier.e2.rie.gouv.fr/le-courrielleur-r118.html";
 gUrlsCourrielleur["courrielleur.aide"]="https://mel.din.developpement-durable.gouv.fr/aide";
 gUrlsCourrielleur["courrielleur.notesversion"]="http://courrielleur.s2.m2.e2.rie.gouv.fr/changelog.html";
-gUrlsCourrielleur["courrielleur.nouveautes"]="http://numerique.metier.e2.rie.gouv.fr/courrielleur-mel-version-8-5-a1872.html";
+gUrlsCourrielleur["courrielleur.nouveautes"]="http://numerique.metier.e2.rie.gouv.fr/le-courrielleur-r118.html";
 gUrlsCourrielleur["courrielleur.urlagenda"]="https://mel.din.developpement-durable.gouv.fr/";
 
 
@@ -24,7 +24,7 @@ var gCourrielleurConsole=null;
 
 function CourrielleurTrace(msg){
 
-  if (!gCm2InitTrace){   
+  if (!gCm2InitTrace){
     let t=Services.prefs.getBoolPref("courrielleur.trace");
     if (t)
       gCourrielleurConsole=Services.console;
@@ -44,7 +44,7 @@ function CourrielleurTrace(msg){
 function Cm2OuvreUrlPref(urlpref){
 
   try{
-    
+
     let url=Services.prefs.getCharPref(urlpref);
 
     if (null==url){
@@ -53,7 +53,7 @@ function Cm2OuvreUrlPref(urlpref){
     }
 
     Cm2OuvreUrlExterne(url);
-    
+
   } catch(ex){
     CourrielleurTrace("Cm2OuvreUrlPref - Erreur ouverture url externe "+urlpref+"."+ex);
   }
@@ -68,14 +68,14 @@ function Cm2OuvreUrlPref(urlpref){
 function Cm2OuvreLienPrefExterne(pref){
 
   try{
-    
+
     //preference pour url spécifique
     let prefurl=Services.prefs.getCharPref(pref);
-    if (prefurl && ""!=prefurl) 
+    if (prefurl && ""!=prefurl)
       url=prefurl;
 
     Cm2OuvreUrlExterne(url);
-    
+
   } catch(ex){
     CourrielleurTrace("Cm2OuvreUrlPref - Erreur ouverture lien externe "+pref+"."+ex);
   }
@@ -91,12 +91,12 @@ function Cm2OuvreLienPrefExterne(pref){
 function Cm2OuvreUrlExterne(url){
 
   try{
-    
+
     CourrielleurTrace("Cm2OuvreUrlExterne url:"+url);
     let newuri=Services.io.newURI(url, null, null);
     let extproc=Components.classes["@mozilla.org/uriloader/external-protocol-service;1"].getService(Components.interfaces.nsIExternalProtocolService);
     extproc.loadURI(newuri, null);
-    
+
   } catch(ex){
     CourrielleurTrace("Cm2OuvreUrlPref - Erreur ouverture lien externe "+pref+"."+ex);
   }
@@ -258,15 +258,15 @@ function cm2MajExceptions(){
   try {
 
     let maj=Services.prefs.getBoolPref("courrielleur.majexceptions");
-    
+
     if (maj){
       //exceptions deja ajoutees
       return;
     }
-    
+
     let except=Services.prefs.getCharPref("network.proxy.no_proxies_on");
     CourrielleurTrace("Mise a jour network.proxy.no_proxies_on (exceptions courrielleur)");
-    
+
     if (null==except || ""==except){
       Services.prefs.setCharPref("network.proxy.no_proxies_on", ".din.developpement-durable.gouv.fr,.s2.m2.e2.rie.gouv.fr");
     } else {
@@ -282,9 +282,9 @@ function cm2MajExceptions(){
       }
       Services.prefs.setCharPref("network.proxy.no_proxies_on", except);
     }
-    
+
     Services.prefs.setBoolPref("courrielleur.majexceptions", true);
-    
+
   } catch(ex){
     CourrielleurTrace("Mise a jour network.proxy.no_proxies_on - erreur:"+ex);
   }

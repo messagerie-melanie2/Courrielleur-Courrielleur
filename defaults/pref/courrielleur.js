@@ -36,7 +36,7 @@ pref("courrielleur.liboeuvre", "SG/SPSSI/CPII Pôle national d'expertise Annuair
 //url de l'option de menu notes de version
 pref("courrielleur.notesversion", "http://courrielleur.s2.m2.e2.rie.gouv.fr/changelog.html");
 //url de l'option de menu nouveautes
-pref("courrielleur.nouveautes", "http://numerique.metier.e2.rie.gouv.fr/courrielleur-mel-version-8-5-a1872.html");
+pref("courrielleur.nouveautes", "http://numerique.metier.e2.rie.gouv.fr/le-courrielleur-r118.html");
 
 //url FAQ Informaticiens
 pref("courrielleur.cm2lienfaq", "http://pne.metier.e2.rie.gouv.fr/faq-messagerie-r454.html");
