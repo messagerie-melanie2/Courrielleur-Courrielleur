@@ -30,122 +30,124 @@
         id="apropos-dlg"
         class="courrielleur-apropos"
         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
-    <script type="application/x-javascript" src="chrome://courrielleur/content/courrielleur.js"/>
+
+  <script type="application/x-javascript" src="chrome://courrielleur/content/courrielleur.js"/>
 
 
-    <keyset id="keys">
-      <key keycode="VK_ESCAPE" oncommand="window.close();"/>
-    </keyset>
+  <keyset id="keys">
+    <key keycode="VK_ESCAPE" oncommand="window.close();"/>
+  </keyset>
 
-    <!--<vbox id="bandeau" class="bandeau">
-      <description id="bandeau-titre" class="bandeau-titre">&courrielleur.apropos.text1;</description>
-    </vbox>-->
+  <vbox id="bandeau" class="bandeau">
+    <description id="bandeau-titre" class="bandeau-titre">&courrielleur.apropos.text1;</description>
+  </vbox>
 
-    <vbox id="apropos-cadre" flex="1">
+  <vbox id="apropos-cadre" flex="1">
 
-      <description class="aproposdesc">&courrielleur.apropos.text1; - &courrielleur.apropos.text2; - &courrielleur.apropos.text3;</description>
+    <description class="aproposdesc">&courrielleur.apropos.text2; - &courrielleur.apropos.text3;</description>
 
-      <!-- versions des extensions -->
-      <grid class="courrielleur-grilleext">
+    <!-- versions des extensions -->
+    <grid class="courrielleur-grilleext">
+      
+      <columns>
+        <column flex="2"/>
+        <column flex="5"/>
+        <column flex="1"/>
+      </columns>
+      
+      <rows>
+        
+        <row class="courrielleur-grille-entete">
+          <label value="&courrielleur.extension;"/>
+          <label value="&courrielleur.descext;"/>
+        </row>
 
-        <columns>
-          <column flex="2"/>
-          <column flex="5"/>
-          <column flex="1"/>
-        </columns>
+        <!-- Agenda base sur Lightning -->
+        <row class="courrielleur-grille-ligne">
+          <label class="courrielleur-lib" value="&courrielleur.libcal;"/>
+          <label value="&courrielleur.cal.tooltip;"/>
+        </row>
+        
+        <row class="courrielleur-grille-ligne">
+          <label class="courrielleur-url" value="&courrielleur.libanais;" onclick="window.openDialog('chrome://anais/content/apropos.xul','','chrome,modal,centerscreen,titlebar,resizable=no');"/>
+          <label value="&anais.apropos.lib1;"/>
+        </row>
 
-        <rows>
+        <row class="courrielleur-grille-ligne">
+          <label class="courrielleur-url" value="&courrielleur.libarchibald;" onclick="window.openDialog('chrome://archibald/content/apropos.xul','','chrome,modal,centerscreen,titlebar,resizable=no');"/>
+          <label value="&archibald.apropos.text1;"/>
+        </row>
 
-          <row class="courrielleur-grille-entete">
-            <label value="&courrielleur.extension;"/>
-            <label value="&courrielleur.descext;"/>
-          </row>
+        <row class="courrielleur-grille-ligne">
+          <label class="courrielleur-url" value="&courrielleur.libcommentaires;" onclick="window.openDialog('chrome://commentaires/content/apropos.xul','','chrome,modal,centerscreen,titlebar,resizable=no');"/>
+          <label value="&comment.apropos.text1;"/>
+        </row>
 
-          <!-- Agenda base sur Lightning -->
-          <row class="courrielleur-grille-ligne">
-            <label class="courrielleur-lib" value="&courrielleur.libcal;"/>
-            <label value="&courrielleur.cal.tooltip;"/>
-          </row>
+        <row class="courrielleur-grille-ligne">
+          <label class="courrielleur-url" value="&courrielleur.libcontacts;" onclick="window.openDialog('chrome://contacts/content/apropos.xul','','chrome,modal,centerscreen,titlebar,resizable=no');"/>
+          <label value="&contactsdav.apropos.text1;"/>
+        </row>
 
-          <row class="courrielleur-grille-ligne">
-            <label class="courrielleur-url" value="&courrielleur.libanais;" onclick="window.openDialog('chrome://anais/content/apropos.xul','','chrome,modal,centerscreen,titlebar,resizable=no');"/>
-            <label value="&anais.apropos.lib1;"/>
-          </row>
+        <row class="courrielleur-grille-ligne">
+          <label class="courrielleur-url" value="&courrielleur.libcm2m2ssimo;" onclick="window.openDialog('chrome://cm2m2ssimo/content/apropos.xul','','chrome,modal,centerscreen,titlebar,resizable=no');"/>
+          <label value="&cm2m2ssimo.apropos.text1;"/>
+        </row>
 
-          <row class="courrielleur-grille-ligne">
-            <label class="courrielleur-url" value="&courrielleur.libarchibald;" onclick="window.openDialog('chrome://archibald/content/apropos.xul','','chrome,modal,centerscreen,titlebar,resizable=no');"/>
-            <label value="&archibald.apropos.text1;"/>
-          </row>
+        <row class="courrielleur-grille-ligne">
+          <label class="courrielleur-url" value="&courrielleur.libpacome;" onclick="window.openDialog('chrome://pacome/content/apropos.xul','','chrome,modal,centerscreen,titlebar,resizable=no');"/>
+          <label value="&pacome.apropos.text1;"/>
+        </row>
+        <!-- extension signature -->
+        <row class="courrielleur-grille-ligne">
+          <label class="urlext" value="&courrielleur.libsigne;" onclick="window.openDialog('chrome://signature/content/about.xul','','chrome,modal,centerscreen,titlebar,resizable=no');"/>
+          <label value="&courrielleur.descsigne;"/>
+        </row>
+        <!-- extension mailredirect -->
+        <row class="courrielleur-grille-ligne">
+          <label value="&courrielleur.libredir;"/>
+          <label value="&courrielleur.descredir;"/>
+        </row>
 
-          <row class="courrielleur-grille-ligne">
-            <label class="courrielleur-url" value="&courrielleur.libcommentaires;" onclick="window.openDialog('chrome://commentaires/content/apropos.xul','','chrome,modal,centerscreen,titlebar,resizable=no');"/>
-            <label value="&comment.apropos.text1;"/>
-          </row>
+        <!-- extension tbsortfolders -->
+        <row class="courrielleur-grille-ligne">
+          <label value="&tbsortfolders.desc;"/>
+          <label value="&tbsortfolders.libelle;"/>
+        </row>
 
-          <row class="courrielleur-grille-ligne">
-            <label class="courrielleur-url" value="&courrielleur.libcontacts;" onclick="window.openDialog('chrome://contacts/content/apropos.xul','','chrome,modal,centerscreen,titlebar,resizable=no');"/>
-            <label value="&contactsdav.apropos.text1;"/>
-          </row>
+        <!-- extension Color Folders -->
+        <row class="courrielleur-grille-ligne">
+          <label value="Color Folders"/>
+          <label value="Permet changer la couleur des dossiers"/>
+        </row>
 
-          <row class="courrielleur-grille-ligne">
-            <label class="courrielleur-url" value="&courrielleur.libcm2m2ssimo;" onclick="window.openDialog('chrome://cm2m2ssimo/content/apropos.xul','','chrome,modal,centerscreen,titlebar,resizable=no');"/>
-            <label value="&cm2m2ssimo.apropos.text1;"/>
-          </row>
+        <!-- module WebAppsM2 -->
+        <row class="courrielleur-grille-ligne">
+          <label value="&courrielleur.libwebappsm2;"/>
+          <label value="&webappsm2.desc;"/>
+        </row>
+        
+        <!-- #6175 module Lookout -->
+        <row class="courrielleur-grille-ligne">
+          <label value="&courrielleur.liblookout;"/>
+          <label value="&lookout.desc;"/>
+        </row>
+        
+        <!-- Thunderbird -->
+        <row class="courrielleur-grille-ligne">
+          <label value="Thunderbird"/>
+          <label value="basé sur la version 60.9.1"/>
+        </row>
 
-          <row class="courrielleur-grille-ligne">
-            <label class="courrielleur-url" value="&courrielleur.libpacome;" onclick="window.openDialog('chrome://pacome/content/apropos.xul','','chrome,modal,centerscreen,titlebar,resizable=no');"/>
-            <label value="&pacome.apropos.text1;"/>
-          </row>
-          <!-- extension signature -->
-          <row class="courrielleur-grille-ligne">
-            <label class="urlext" value="&courrielleur.libsigne;" onclick="window.openDialog('chrome://signature/content/about.xul','','chrome,modal,centerscreen,titlebar,resizable=no');"/>
-            <label value="&courrielleur.descsigne;"/>
-          </row>
-          <!-- extension mailredirect -->
-          <row class="courrielleur-grille-ligne">
-            <label value="&courrielleur.libredir;"/>
-            <label value="&courrielleur.descredir;"/>
-          </row>
+      </rows>
+      
+    </grid>
 
-          <!-- extension tbsortfolders -->
-          <row class="courrielleur-grille-ligne">
-            <label value="&tbsortfolders.desc;"/>
-            <label value="&tbsortfolders.libelle;"/>
-          </row>
+    <vbox id="infosapropos"/>
 
-          <!-- extension Color Folders -->
-          <row class="courrielleur-grille-ligne">
-            <label value="Color Folders"/>
-            <label value="Permet changer la couleur des dossiers"/>
-          </row>
+  </vbox>
 
-          <!-- module WebAppsM2 -->
-          <row class="courrielleur-grille-ligne">
-            <label value="&courrielleur.libwebappsm2;"/>
-            <label value="&webappsm2.desc;"/>
-          </row>
+  <hbox align="right">
+    <button label="Fermer" oncommand="close();"/>
+  </hbox>
 
-          <!-- #6175 module Lookout -->
-          <row class="courrielleur-grille-ligne">
-            <label value="&courrielleur.liblookout;"/>
-            <label value="&lookout.desc;"/>
-          </row>
-
-          <!-- Thunderbird -->
-          <row class="courrielleur-grille-ligne">
-            <label value="Thunderbird"/>
-            <label value="basé sur la version 60.9.1"/>
-          </row>
-
-        </rows>
-
-      </grid>
-      <scrollbox flex="1" height="100%">
-        <vbox id="infosapropos"/>
-      </scrollbox>
-    </vbox>
-
-    <!--<hbox align="right">
-      <button label="Fermer" oncommand="close();"/>
-    </hbox>-->
 </window>
