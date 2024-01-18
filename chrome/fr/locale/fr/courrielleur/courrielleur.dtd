@@ -33,7 +33,7 @@
 <!ENTITY btMelanissimo.lib "Mélanissimo">
 <!ENTITY btMelanissimo.bulle "Créer un nouveau message avec Mélanissimo">
 
-<!ENTITY btAgenda.lib "Ouvrir Mél dans un navigateur">
+<!ENTITY btAgenda.lib "Ouvrir le Bnum dans le navigateur">
 <!ENTITY btAgenda.bulle "Accès à Mél web et à Mon compte">
 
 <!ENTITY courrielleur.lienfic.lib "Insérer un lien sur un fichier...">
