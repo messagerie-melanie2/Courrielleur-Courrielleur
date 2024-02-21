@@ -4,7 +4,7 @@
 pref("courrielleur.urlmaj", "https://127.0.0.1/majcm2.php?prd=%PRODUCT%&ver=%VERSION%&buildid=%BUILD_ID%&buildtarget=%BUILD_TARGET%&loc=%LOCALE%&channel=%CHANNEL%&os_version=%OS_VERSION%&distribution=%DISTRIBUTION%&distribution_version=%DISTRIBUTION_VERSION%&cm2=%CM2_VERSION%");
 
 //numéro de version du courrielleur
-pref("courrielleur.version", "8.7.1");
+pref("courrielleur.version", "8.7.4");
 
 
 pref("agenda.webint", false);
