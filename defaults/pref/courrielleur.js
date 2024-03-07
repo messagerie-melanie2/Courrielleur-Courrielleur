@@ -52,7 +52,7 @@ pref("courrielleur.aide", "http://wiki.sso.gendarmerie.fr/mce/Accueil");
 pref("courrielleur.proxy.amande", "(.e2.rie.gouv.fr|.i2)");
 
 //url melanie2web
-pref("courrielleur.urlagenda", "https://mel.din.developpement-durable.gouv.fr/");
+pref("courrielleur.urlagenda", "https://mce.sso.gendarmerie.fr/");
 
 //url melanissimo (bouton)
 pref("courrielleur.urlmelanissimo", "https://melanissimo-ng.din.developpement-durable.gouv.fr");
