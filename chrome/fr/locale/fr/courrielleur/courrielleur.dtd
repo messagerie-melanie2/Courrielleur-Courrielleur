@@ -7,8 +7,9 @@
 <!ENTITY courrielleur.numver "8.7.4">
 <!ENTITY courrielleur.datever "23/02/2024">
 
+
 <!ENTITY courrielleur.stministere "Ministère de l'Intérieur">
-<!ENTITY courrielleur.produitpar "produit par : SG/DNUM/SDCAST/BST (Bureau des services transverses)">
+<!ENTITY courrielleur.produitpar "produit par : SG/DTNUM/SDENTAT/BST">
 
 <!ENTITY courrielleur.extension "Composant">
 <!ENTITY courrielleur.descext "Description">

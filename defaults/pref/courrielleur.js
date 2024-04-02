@@ -28,10 +28,12 @@ pref("courrielleur.listeministeres", "Ministère de l'Intérieur");
 // autres libelles ministeres  pour ajout
 pref("courrielleur.autresministeres", "");
 
-//libelle maitrise d'ouvrage des boites a propos
-pref("courrielleur.libouvrage", "SG/DNUM/SDCAST/BST Bureau des services transverses");
+
+//libelle maitrise d'ouvrage des boites a propos (voir courrielleur.dtd)
+pref("courrielleur.libouvrage", "SG/DTNUM/SDENTAT/BST");
 //libelle maitrise d'oeuvre des boites a propos
-pref("courrielleur.liboeuvre", "SG/DNUM/SDCAST/BST Bureau des services transverses");
+pref("courrielleur.liboeuvre", "SG/DTNUM/SDENTAT/BST");
+
 
 //url de l'option de menu notes de version
 pref("courrielleur.notesversion", "http://courrielleur.s2.m2.e2.rie.gouv.fr/changelog.html");
