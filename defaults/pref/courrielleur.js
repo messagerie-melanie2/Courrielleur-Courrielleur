@@ -89,5 +89,6 @@ pref("courrielleur.url.discussion", "https://mel.din.developpement-durable.gouv.
 
 pref("melanissimo.module", false);
 
+
 // url de la page de téléchargement des extensions mceweb2
-pref("courrielleur.extensions.url", "https://dev.autoconf.mce.interieur.rie.gouv.fr/extensions/mce_extensions_tb60.html");
+pref("courrielleur.extensions.url", "https://dev.autoconf.mce.interieur.rie.gouv.fr/extensions/mce_extensions_tb.html");
