@@ -1,5 +1,7 @@
 ChromeUtils.import("resource://gre/modules/Services.jsm");
 
+const CHROME_URL_ADDRBOOK='chrome://messenger/content/addressbook/addressbook.xul';
+
 window.addEventListener("load",initCourM2Messenger,false);
 
 /**
@@ -159,7 +161,7 @@ function cm2InitBoutonsOnglet() {
     let bt1=document.createElement("toolbarbutton");
     bt1.setAttribute("id", "cm2-tab-abook");
     bt1.setAttribute("class", "toolbarbutton-1");
-    bt1.setAttribute("oncommand", "OuvreEnOnglet('chrome://messenger/content/addressbook/addressbook.xul', 'cm2-tab-abook');");
+    bt1.setAttribute("oncommand", "OuvreEnOnglet(CHROME_URL_ADDRBOOK, 'cm2-tab-abook');");
     bt1.setAttribute("tooltiptext", bundle.GetStringFromName("cm2tab.abook.label"));
 
     bar.appendChild(bt1, null);
@@ -205,6 +207,18 @@ function OuvreEnOnglet(chromeurl, typeonglet) {
     return;
   }
 
+	// ouvrir un seul onglet carnet
+	if ("cm2-tab-abook"==typeonglet){
+		for (t of tabmail.tabInfo) {
+			if (!("browser" in t))continue;
+			//Services.console.logStringMessage("*** currentURI.spec:"+t.browser.currentURI.spec);
+			if (t.browser.currentURI.spec==CHROME_URL_ADDRBOOK){
+				tabmail.switchToTab(t);
+				return;
+			}
+		}
+	}
+
   //chromeTab
   let tab=tabmail.openTab("chromeTab", {chromePage: chromeurl,
                                   clickHandler: "specialTabs.defaultClickHandler(event);"});
@@ -222,7 +236,7 @@ function cmelSwitchToApp(id){
   if ("btCMel-courrier"==id){
     document.getElementById('tabmail').switchToTab(0);
   } else if ("btCMel-contacts"==id){
-    OuvreEnOnglet('chrome://messenger/content/addressbook/addressbook.xul', 'cm2-tab-abook');
+    OuvreEnOnglet(CHROME_URL_ADDRBOOK, 'cm2-tab-abook');
   } else if ("btCMel-agenda"==id){
     document.getElementById('tabmail').openTab('calendar', { title: document.getElementById(id).getAttribute('label') });
   } else if ("btCMel-taches"==id){
