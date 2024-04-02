@@ -6,7 +6,9 @@
 ChromeUtils.import("resource://gre/modules/Services.jsm");
 ChromeUtils.import("resource://gre/modules/XPCOMUtils.jsm");
 ChromeUtils.import("resource://gre/modules/Timer.jsm");
-ChromeUtils.import("resource://gre/modules/cm2MigreAmelie.jsm");
+
+ChromeUtils.import("resource://gre/modules/mceMigrationPablo.jsm");
+
 
 let Cc=Components.classes;
 let Ci=Components.interfaces;
@@ -65,7 +67,6 @@ Cm2Startup.prototype = {
   observe: function(aSubject, aTopic, aData)
   {
     //Services.console.logStringMessage("*** Cm2Startup observe aSubject:"+aSubject+" - aTopic:"+aTopic+" - aData:"+aData+"\n");
-
     if ("app-startup"==aTopic){
       //creation resource calendar
       try {
@@ -110,10 +111,12 @@ Cm2Startup.prototype = {
         this.fermeSplash();
 
     } else if ("command-line-startup"==aTopic){
+			
+			Services.console.logStringMessage("*** command-line-startup");
 
       var cmdLine=aSubject.QueryInterface(Ci.nsICommandLine);
       if (cmdLine) {
-        //Services.console.logStringMessage("*** Cm2Startup nsICommandLine length:"+cmdLine.length);
+        Services.console.logStringMessage("*** Cm2Startup nsICommandLine length:"+cmdLine.length);
 
         var accs=Services.prefs.getCharPref("mail.accountmanager.accounts");
         if (null==accs || ""==accs){
@@ -124,7 +127,6 @@ Cm2Startup.prototype = {
 
         for (var i=0; i<cmdLine.length; i++){
           var arg=cmdLine.getArgument(i);
-          //Services.console.logStringMessage("*** Cm2Startup nsICommandLine getArgument:"+arg);
           arg=arg.toLowerCase();
           if ("-jsconsole"==arg ||
               "-mail"==arg ||
@@ -139,9 +141,60 @@ Cm2Startup.prototype = {
     }
 
     else if ("profile-do-change"==aTopic){
+			Services.console.logStringMessage("*** profile-do-change");
+			
+			// Detection démarrage sur profil pablo
+			if (Services.prefs.prefHasUserValue("pablo2maja.autoconfstatus")){
+				Services.console.logStringMessage("*** Detection démarrage sur profil pablo");
+				// pas un courrielleur MCE
+				this.fermeSplash();
+				
+				Services.ww.openWindow(null, "chrome://pacome/content/msgErreurProfilPablo.xul", "",
+																			"chrome,centerscreen,modal,titlebar", null);
+																							
+				Services.startup.quit(Ci.nsIAppStartup.eForceQuit);
+				return;
+			}
+			
+			// Détection migration en cours
+			if (Services.prefs.prefHasUserValue("courrielleur.migrationPablo") &&
+					(Services.prefs.getCharPref("courrielleur.migrationPablo")=="En cours" ||
+					 Services.prefs.getCharPref("courrielleur.migrationPablo")=="Echec")){
+				Services.console.logStringMessage("*** Detection migration en cours");
 
-      cm2AmMigreComptes();
-      
+				this.fermeSplash();
+				
+				Services.ww.openWindow(null, "chrome://pacome/content/msgErreurMigrePablo.xul","","chrome,modal,centerscreen,titlebar,resizable=no", null);
+																						
+				Services.startup.quit(Ci.nsIAppStartup.eForceQuit);
+				return;
+			}
+			
+			// si false, l'outil de migration Pablo vers MCE est désactivé
+			// on n'affiche pas le choix de profil pablo si migration réalisée
+			if (Services.prefs.getBoolPref("pacome.migrationPablo.enabled") &&
+					!Services.prefs.prefHasUserValue("courrielleur.migrationPablo")){
+				Services.console.logStringMessage("*** outil de migration Pablo vers MCE actif");
+				
+				// Detection nouveau profil
+				var accs=Services.prefs.getCharPref("mail.accountmanager.accounts");
+				if (null==accs || ""==accs){
+					Services.console.logStringMessage("*** profile-do-change aucun compte");				
+											
+					// test lister les profils PABLO
+					let nbpablo=mceMigrationMCE.ListeProfilsPABLO();
+					
+					// afficher la fenêtre de choix de profil Pablo si au moins 1 choix-profil-pablo.xul
+					if (nbpablo > 0){
+						Services.console.logStringMessage("*** afficher la fenêtre de choix de profil Pablo");
+
+						this.fermeSplash();
+						
+						Services.ww.openWindow(null, "chrome://pacome/content/choix-profil-pablo.xul", "Migration MCE",
+																					"chrome,centerscreen,modal,titlebar", null);	
+					}
+				}
+			}
     } 
 
     else if ("final-ui-startup"==aTopic){
