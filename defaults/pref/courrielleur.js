@@ -36,9 +36,9 @@ pref("courrielleur.liboeuvre", "SG/DTNUM/SDENTAT/BST");
 
 
 //url de l'option de menu notes de version
-pref("courrielleur.notesversion", "http://courrielleur.s2.m2.e2.rie.gouv.fr/changelog.html");
+pref("courrielleur.notesversion", "https://info.messagerie.interieur.rie.gouv.fr/");
 //url de l'option de menu nouveautes
-pref("courrielleur.nouveautes", "http://numerique.metier.e2.rie.gouv.fr/courrielleur-mel-version-8-5-a1872.html");
+pref("courrielleur.nouveautes", "https://info.messagerie.interieur.rie.gouv.fr/");
 
 //url FAQ Informaticiens
 pref("courrielleur.cm2lienfaq", "https://info.messagerie.interieur.rie.gouv.fr/");
@@ -46,7 +46,7 @@ pref("courrielleur.cm2lienfaq", "https://info.messagerie.interieur.rie.gouv.fr/"
 pref("courrielleur.cm2lientrucs", "https://info.messagerie.interieur.rie.gouv.fr/");
 
 //url aide courrielleur
-pref("courrielleur.aide", "http://messagerie.dsic.minint.fr/");
+pref("courrielleur.aide", "https://info.messagerie.interieur.rie.gouv.fr/");
 
 //valeur de test du proxy AMANDE
 //test sur la terminaison du nom du proxy (".i2" => "proxy1.i2" => AMANDE)
@@ -54,10 +54,10 @@ pref("courrielleur.aide", "http://messagerie.dsic.minint.fr/");
 pref("courrielleur.proxy.amande", "(.e2.rie.gouv.fr|.i2)");
 
 //url melanie2web
-pref("courrielleur.urlagenda", "https://mceweb2.si.minint.fr/?_task=calendar");
+pref("courrielleur.urlagenda", "https://dev.webmail.mce.interieur.rie.gouv.fr/?_task=calendar");
 
 //url melanissimo (bouton)
-pref("courrielleur.urlmelanissimo", "https://melanissimo-ng.din.developpement-durable.gouv.fr");
+pref("courrielleur.urlmelanissimo", "https://envol3.interieur.rie.gouv.fr");
 
 //mantis 0004108: Nouveaux noms : ajouter dynamiquement les exceptions m2 pour les anciens courrielleurs
 //si true n'effectue pas (deja fait)
@@ -88,3 +88,6 @@ pref("courrielleur.testimap.startup", false);
 pref("courrielleur.url.discussion", "https://mel.din.developpement-durable.gouv.fr/?_task=discussion");
 
 pref("melanissimo.module", false);
+
+// url de la page de téléchargement des extensions mceweb2
+pref("courrielleur.extensions.url", "https://dev.autoconf.mce.interieur.rie.gouv.fr/extensions/mce_extensions_tb60.html");
