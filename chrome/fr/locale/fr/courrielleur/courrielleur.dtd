@@ -80,7 +80,7 @@
 
 <!-- module WebAppsM2 -->
 <!ENTITY courrielleur.libwebappsm2 "WebAppsM2">
-<!ENTITY webappsm2.desc "Intégration de Pégase, Ariane et Mon Compte">
+<!ENTITY webappsm2.desc "Intégration de Sondage, Ariane et Mon Compte">
 <!ENTITY webappsm2.numver "2.0.8">
 
 <!-- module Lookout -->
