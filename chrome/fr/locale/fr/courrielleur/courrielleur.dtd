@@ -4,8 +4,8 @@
 <!ENTITY courrielleur.apropos.text3 "Publié le : &courrielleur.datever;">
 <!ENTITY courrielleur.libapropos "À propos du Courrielleur MCE">
 <!ENTITY courrielleur.aproposkey "C">
-<!ENTITY courrielleur.numver "8.7.4">
-<!ENTITY courrielleur.datever "23/02/2024">
+<!ENTITY courrielleur.numver "8.7.4 (QUALIF)">
+<!ENTITY courrielleur.datever "18/04/2024">
 
 
 <!ENTITY courrielleur.stministere "Ministère de l'Intérieur">
