@@ -7,6 +7,7 @@ ChromeUtils.import("resource://gre/modules/Services.jsm");
 ChromeUtils.import("resource://gre/modules/XPCOMUtils.jsm");
 ChromeUtils.import("resource://gre/modules/Timer.jsm");
 ChromeUtils.import("resource://gre/modules/cm2MigreAmelie.jsm");
+ChromeUtils.import("resource:///modules/folderUtils.jsm");
 
 let Cc=Components.classes;
 let Ci=Components.interfaces;
@@ -141,12 +142,16 @@ Cm2Startup.prototype = {
           break;
         }
       }
+
+      let modif=modifyOrdreComptes();
+      if (modif){
+        Services.startup.quit(Services.startup.eForceQuit | Services.startup.eRestart);
+      }
     }
 
     else if ("profile-do-change"==aTopic){
 
       cm2AmMigreComptes();
-      
     } 
 
     else if ("final-ui-startup"==aTopic){
@@ -205,6 +210,47 @@ Cm2Startup.prototype = {
   classID: Components.ID("{9FCAF8A0-BFB0-405d-AAF4-18F1D6E0E371}"),
 
   QueryInterface: XPCOMUtils.generateQI([Ci.nsIObserver])
+}
+
+// modification de l'ordre des comptes pour permettre le tri des comptes dans tbsortfolders
+// réalisé une seule fois
+// annule la modification pour le ticket mantis 0004268 a pour effet de changer l'ordre des comptes
+// retourné par la fonction allAccountsSorted (folderUtils.jsm)
+// modifyOrdreComptes modifie la préférence "mail.accountmanager.accounts"
+// pour obtenir l'équivalent de allAccountsSorted en version originale
+// return true si modification
+function modifyOrdreComptes(){
+
+	// tester si déjà fait
+	let val=Services.prefs.getBoolPref("courrielleur.ordre_comptes", false);
+	if (val) return false;
+
+	// liste des comptes non triée
+	let accounts1=allAccountsSorted();
+	let ordre1=[];
+	for (let acct of accounts1)
+    ordre1.push(acct.key);
+  let pref1=ordre1.join(",");
+	Services.console.logStringMessage("modifyOrdreComptes pref1:"+pref1);
+
+	// liste des comptes triée (tb original)
+	let accounts2=accounts1.sort(compareAccounts);
+	let ordre2=[];
+	for (let acct of accounts2)
+    ordre2.push(acct.key);
+  let pref2=ordre2.join(",");
+	Services.console.logStringMessage("modifyOrdreComptes pref2:"+pref2);
+
+	if (pref1===pref2) return false;
+
+	Services.console.logStringMessage("Modification de l'ordre des comptes au démarrage :"+pref2);
+
+	Services.prefs.setCharPref("mail.accountmanager.accounts", pref2);
+	Services.prefs.setBoolPref("courrielleur.ordre_comptes", true);
+
+	Services.prefs.savePrefFile(null);
+
+	return true;
 }
 
 
