@@ -1,0 +1,29 @@
+# Liste des urls/valeurs pour modifications pour environnement Prod
+
+urls_Prod=(
+
+# courrielleur.contactsdav.serveur.nom
+"prod\.dav\.mce\.interieur\.rie\.gouv\.fr"
+
+# courrielleur.urlagenda
+"https:\/\/prod\.webmail\.mce\.interieur\.rie\.gouv\.fr\/?_task=calendar"
+
+# pacome.urlparam
+"https:\/\/prod\.autoconf\.mce\.interieur\.rie\.gouv\.fr\/param\.php"
+# pacome.urlmdp
+"https:\/\/prod\.autoconf\.mce\.interieur\.rie\.gouv\.fr\/pacomemdp2\.php"
+
+# courrielleur.extensions.url
+"https:\/\/prod\.autoconf\.mce\.interieur\.rie\.gouv\.fr\/extensions\/mce_extensions_tb\.html"
+
+# courrielleur.etiquettes.service
+"https:\/\/prod\.autoconf\.mce\.interieur\.rie\.gouv\.fr\/pacometags\.php"
+
+# pegase:href
+"https:\/\/prod\.sondage\.mce\.interieur\.rie\.gouv\.fr\/"
+
+# https:\/\/ ConfigManager.jsm
+"https:\/\/prod\.webmail\.mce\.interieur\.rie\.gouv\.fr"
+
+)
+

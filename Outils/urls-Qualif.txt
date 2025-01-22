@@ -1,0 +1,29 @@
+# Liste des urls/valeurs pour modifications pour environnement Qualif
+
+urls_QUALIF=(
+
+# courrielleur.contactsdav.serveur.nom
+"qualification\.dav\.mce\.interieur\.rie\.gouv\.fr"
+
+# courrielleur.urlagenda
+"https:\/\/qualification\.webmail\.mce\.interieur\.rie\.gouv\.fr\/?_task=calendar"
+
+# pacome.urlparam
+"https:\/\/qualification\.autoconf\.mce\.interieur\.rie\.gouv\.fr\/param\.php"
+# pacome.urlmdp
+"https:\/\/qualification\.autoconf\.mce\.interieur\.rie\.gouv\.fr\/pacomemdp2\.php"
+
+# courrielleur.extensions.url
+"https:\/\/qualification\.autoconf\.mce\.interieur\.rie\.gouv\.fr\/extensions\/mce_extensions_tb\.html"
+
+# courrielleur.etiquettes.service
+"https:\/\/qualification\.autoconf\.mce\.interieur\.rie\.gouv\.fr\/pacometags\.php"
+
+# pegase:href
+"https:\/\/qualification\.sondage\.mce\.interieur\.rie\.gouv\.fr\/"
+
+# webmail ConfigManager.jsm
+"https:\/\/qualification\.webmail\.mce\.interieur\.rie\.gouv\.fr"
+
+)
+

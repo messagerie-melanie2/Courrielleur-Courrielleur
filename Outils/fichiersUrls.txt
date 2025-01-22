@@ -1,0 +1,30 @@
+
+
+# fichiers courrielleur à modifier pour le changement d'environnement
+# chaque fichier correspond à une valeur d'url à modifier
+
+fichiers=(
+
+# courrielleur.contactsdav.serveur.nom
+"defaults/pref/contactsdav.js"
+
+# courrielleur.urlagenda
+"defaults/pref/courrielleur.js"
+
+# pacome.urlparam
+"defaults/pref/pacome.js"
+# pacome.urlmdp
+"defaults/pref/pacome.js"
+
+# courrielleur.extensions.url
+"defaults/pref/courrielleur.js"
+
+# courrielleur.etiquettes.service
+"defaults/pref/pacome.js"
+
+# pegase:href
+"modules/ConfigManager.jsm"
+
+# webmail ConfigManager.jsm
+"modules/ConfigManager.jsm"
+)

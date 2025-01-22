@@ -1,0 +1,49 @@
+Documentation des scripts pour modifier l'environnement du dépôt courrielleur
+-----------------------------------------------------------------------------
+
+Les scripts permettent de passer d'un environnement à un autre par modification du dépôt source courrielleur.
+
+Les modifications sont celles référencés dans le document 'cmel_prefs_env-v7.xlsx'.
+
+Le choix de scripts pour modifier dynamiquement évite l'utilisation de "patchs" qui eux s'appliquent à une version spécifique de code source.
+Ceci évite des conflits d'import de patchs.
+
+Pour chaque version de courrielleur, il y a une série de scripts spécifiques.
+Pour une nouvelle version de courrielleur, il suffit de copier les scripts de la version en cours, de les renommer et de modifier en interne le chemin du courrielleur.
+
+Chaque script permet de passer d'un environnement à un autre, de Dev à Qualif par exemple.
+On peut écrire autant de scripts que l'on souhaite de changements d'environnement.
+
+Plan de nommage des scripts :
+<version>_<env courant>_<env final>.sh
+<version> : version de courrielleur (ex:8.7.4)
+<env courant> : environnement en cours dans le courrielleur
+<env final> : environnement final après transformations
+
+Exécution des scripts :
+Il faut l'exécuter depuis le répertoire du script (sinon modifier le chemin du courrielleur dans le script).
+Le choix du script doit correspondre à l'environnement en cours dans le dépôt.
+(si on est en dev, on ne doit pas exécuter 8.7.4_Qualif_PreProd.sh)
+
+scripts disponibles à ce jour :
+8.7.4_Dev_Qualif.sh
+8.7.4_Qualif_Dev.sh
+8.7.4_Qualif_PreProd.sh
+8.7.4_Qualif_Prod.sh
+
+Ajout de script :
+Copier et renommer une version existante et modifier en interne.
+- Importer les fichiers urls-xxx.txt qui conviennent
+- Modifier l'appel ModifieUrls en conséquence
+
+
+Fichiers des urls : 
+Pour chaque environnement, il y a un fichier urls-xxx.txt, où xxx est le nom de l'environnement (Dev, Qualif, PreProd et Prod)
+ex: urls-Dev.txt
+Chaque fichier contient la liste des urls d'après le document de référence 'cmel_prefs_env-v7.xlsx'.
+Ne figurent que les urls qui changent.
+Le nombre et l'ordre doivent être le même dans tous les fichiers.
+
+Fichiers à modifier : fichiersUrls.txt
+Contient les chemins relatifs des fichiers à modifier (colonne 'Fichier' dans	 le document)
+
