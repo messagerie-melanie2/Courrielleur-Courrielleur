@@ -34,7 +34,7 @@
 <!ENTITY btMelanissimo.lib "Mélanissimo">
 <!ENTITY btMelanissimo.bulle "Créer un nouveau message avec Mélanissimo">
 
-<!ENTITY btAgenda.lib "Ouvrir MCE dans un navigateur">
+<!ENTITY btAgenda.lib "Ouvrir Webmail">
 <!ENTITY btAgenda.bulle "Accès à MCE web et à Mon compte">
 
 <!ENTITY courrielleur.lienfic.lib "Insérer un lien sur un fichier...">
