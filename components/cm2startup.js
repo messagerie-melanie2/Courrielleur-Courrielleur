@@ -146,7 +146,7 @@ Cm2Startup.prototype = {
 			// Detection démarrage sur profil pablo
 			if (Services.prefs.prefHasUserValue("pablo2maja.autoconfstatus")){
 				Services.console.logStringMessage("*** Detection démarrage sur profil pablo");
-				// pas un courrielleur MCE
+				// pas un courrielleur MATISSE
 				this.fermeSplash();
 				
 				Services.ww.openWindow(null, "chrome://pacome/content/msgErreurProfilPablo.xul", "",
@@ -170,11 +170,11 @@ Cm2Startup.prototype = {
 				return;
 			}
 			
-			// si false, l'outil de migration Pablo vers MCE est désactivé
+			// si false, l'outil de migration Pablo vers MATISSE est désactivé
 			// on n'affiche pas le choix de profil pablo si migration réalisée
 			if (Services.prefs.getBoolPref("pacome.migrationPablo.enabled") &&
 					!Services.prefs.prefHasUserValue("courrielleur.migrationPablo")){
-				Services.console.logStringMessage("*** outil de migration Pablo vers MCE actif");
+				Services.console.logStringMessage("*** outil de migration Pablo vers MATISSE actif");
 				
 				// Detection nouveau profil
 				var accs=Services.prefs.getCharPref("mail.accountmanager.accounts");
@@ -190,7 +190,7 @@ Cm2Startup.prototype = {
 
 						this.fermeSplash();
 						
-						Services.ww.openWindow(null, "chrome://pacome/content/choix-profil-pablo.xul", "Migration MCE",
+						Services.ww.openWindow(null, "chrome://pacome/content/choix-profil-pablo.xul", "Migration MATISSE",
 																					"chrome,centerscreen,modal,titlebar", null);	
 					}
 				}
