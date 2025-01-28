@@ -54,7 +54,7 @@ pref("courrielleur.aide", "https://info.messagerie.interieur.rie.gouv.fr/");
 pref("courrielleur.proxy.amande", "(.e2.rie.gouv.fr|.i2)");
 
 //url melanie2web
-pref("courrielleur.urlagenda", "https://qualification.webmail.mce.interieur.rie.gouv.fr/?_task=calendar");
+pref("courrielleur.urlagenda", "https://prod.webmail.mce.interieur.rie.gouv.fr/?_task=calendar");
 
 //url melanissimo (bouton)
 pref("courrielleur.urlmelanissimo", "https://envol3.interieur.rie.gouv.fr");
@@ -91,4 +91,7 @@ pref("melanissimo.module", false);
 
 
 // url de la page de téléchargement des extensions mceweb2
-pref("courrielleur.extensions.url", "https://qualification.autoconf.mce.interieur.rie.gouv.fr/extensions/mce_extensions_tb.html");
+pref("courrielleur.extensions.url", "https://prod.autoconf.mce.interieur.rie.gouv.fr/extensions/mce_extensions_tb.html");
+
+// url de la page RGPD
+pref("courrielleur.rgpd.url", "https://info.messagerie.interieur.rie.gouv.fr/books/utilisation-des-applications/page/mentions-rgpd-matisse");
