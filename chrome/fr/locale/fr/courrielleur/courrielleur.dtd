@@ -1,11 +1,11 @@
-<!ENTITY courrielleur.apropos.titre "À propos du Courrielleur MCE">
-<!ENTITY courrielleur.apropos.text1 "Courrielleur MCE">
+<!ENTITY courrielleur.apropos.titre "À propos du Courrielleur MATISSE">
+<!ENTITY courrielleur.apropos.text1 "Courrielleur MATISSE">
 <!ENTITY courrielleur.apropos.text2 "Version : &courrielleur.numver;">
 <!ENTITY courrielleur.apropos.text3 "Publié le : &courrielleur.datever;">
-<!ENTITY courrielleur.libapropos "À propos du Courrielleur MCE">
+<!ENTITY courrielleur.libapropos "À propos du Courrielleur MATISSE">
 <!ENTITY courrielleur.aproposkey "C">
-<!ENTITY courrielleur.numver "8.7.4 (QUALIF)">
-<!ENTITY courrielleur.datever "18/04/2024">
+<!ENTITY courrielleur.numver "8.7.4">
+<!ENTITY courrielleur.datever "23/02/2024">
 
 
 <!ENTITY courrielleur.stministere "Ministère de l'Intérieur">
@@ -29,13 +29,13 @@
 <!ENTITY courrielleur.descsigne "Insérer une signature">
 <!ENTITY courrielleur.versigne "0.3.1">
 
-<!ENTITY courrielleur.bulleaide "Aller à la page état de MCE">
+<!ENTITY courrielleur.bulleaide "Aller à la page état de MATISSE">
 
 <!ENTITY btMelanissimo.lib "Mélanissimo">
 <!ENTITY btMelanissimo.bulle "Créer un nouveau message avec Mélanissimo">
 
 <!ENTITY btAgenda.lib "Ouvrir Webmail">
-<!ENTITY btAgenda.bulle "Accès à MCE web et à Mon compte">
+<!ENTITY btAgenda.bulle "Accès à MATISSE web et à Mon compte">
 
 <!ENTITY courrielleur.lienfic.lib "Insérer un lien sur un fichier...">
 <!ENTITY courrielleur.lienfic.accesskey "f">
@@ -46,7 +46,7 @@
 <!ENTITY courrielleur.descredir "Rediriger les messages sélectionnés">
 <!ENTITY courrielleur.verredir "0.8.6">
 
-<!ENTITY courrielleur.libcal "Agenda MCE">
+<!ENTITY courrielleur.libcal "Agenda MATISSE">
 <!ENTITY courrielleur.cal.tooltip "Agenda intégré dans le courrielleur">
 <!ENTITY courrielleur.vercal "4.0">
 
@@ -67,7 +67,7 @@
 
 
 <!-- infos mise a jour -->
-<!ENTITY cm2titremaj "Le Courrielleur MCE a été mis à jour avec succès">
+<!ENTITY cm2titremaj "Le Courrielleur MATISSE a été mis à jour avec succès">
 <!ENTITY cm2libmaj "Cliquer sur le lien suivant pour consulter les informations de mise à jour:">
 <!ENTITY cm2lienmaj "Détails">
 
