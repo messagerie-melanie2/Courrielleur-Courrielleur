@@ -454,3 +454,16 @@ toolbar[iconsize="small"] #cm2-tab-anais[disabled] {
 #appmenu_runJunkControls, #runJunkControls{
 	display:none;
 }
+
+/* MI : Masquer 'Page d'accueil' 'Notes de version' 'Nouveautés' (ticket 47) */
+#cm2PageAccueil {
+	display:none;
+}
+
+#releaseNotes {
+	display:none;
+}
+
+#whatsNew {
+	display:none;
+}

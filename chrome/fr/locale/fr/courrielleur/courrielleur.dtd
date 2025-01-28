@@ -126,3 +126,6 @@ Vous avez une idée pour l'amélioration de Mélanie2 ? Vous pouvez nous en fair
 <!ENTITY btCMel-sondage "Sondage">
 <!ENTITY btCMel-discus "Discussion">
 <!ENTITY btCMel-param "Paramètres">
+
+<!-- libellé option RGPD dans le menu ? -->
+<!ENTITY miRGPD.lib "Politique de confidentialité - RGPD">

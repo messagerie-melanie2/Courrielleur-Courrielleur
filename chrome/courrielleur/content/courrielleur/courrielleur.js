@@ -6,7 +6,7 @@ ChromeUtils.import("resource://gre/modules/pacomeAuthUtils.jsm");
 var gUrlsCourrielleur=new Array();
 gUrlsCourrielleur["courrielleur.urlmelanissimo"]="https://melanissimo-ng.din.developpement-durable.gouv.fr";
 gUrlsCourrielleur["courrielleur.infosmaj"]="http://numerique.metier.e2.rie.gouv.fr/courrielleur-mel-version-8-5-a1872.html";
-gUrlsCourrielleur["courrielleur.aide"]="http://messagerie.dsic.minint.fr/";
+gUrlsCourrielleur["courrielleur.aide"]="https://portail-ent.interieur.rie.gouv.fr/accueil/outils-collaboratifs/messagerie/";
 gUrlsCourrielleur["courrielleur.notesversion"]="http://courrielleur.s2.m2.e2.rie.gouv.fr/changelog.html";
 gUrlsCourrielleur["courrielleur.nouveautes"]="http://numerique.metier.e2.rie.gouv.fr/courrielleur-mel-version-8-5-a1872.html";
 gUrlsCourrielleur["courrielleur.urlagenda"]="https://mel.din.developpement-durable.gouv.fr/";
@@ -297,3 +297,9 @@ function cm2BoiteAIdees(){
   window.openDialog("chrome://courrielleur/content/cm2Idees.xul","","chrome,centerscreen,titlebar,modal,resizable");
 }
 
+function miRGPD() {
+
+  let url=Services.prefs.getCharPref('courrielleur.rgpd.url');
+
+  if (url && ""!=url) Cm2OuvreUrlExterne(url);
+}

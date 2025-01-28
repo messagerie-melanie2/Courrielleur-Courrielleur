@@ -44,6 +44,9 @@
     <menuitem id="cm2idees"
               label="&cm2idees.lib;" insertbefore="functionsSeparator"
               oncommand="cm2BoiteAIdees();"/>
+    <menuitem id="miRGPD"
+              label="&miRGPD.lib;" insertbefore="functionsSeparator"
+              oncommand="miRGPD();"/>
   </menupopup>
 
   <!-- menu application -->
