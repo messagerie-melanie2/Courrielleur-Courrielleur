@@ -46,7 +46,7 @@ pref("courrielleur.cm2lienfaq", "https://info.messagerie.interieur.rie.gouv.fr/"
 pref("courrielleur.cm2lientrucs", "https://info.messagerie.interieur.rie.gouv.fr/");
 
 //url aide courrielleur
-pref("courrielleur.aide", "https://info.messagerie.interieur.rie.gouv.fr/");
+pref("courrielleur.aide", "https://portail-ent.interieur.rie.gouv.fr/accueil/outils-collaboratifs/messagerie/");
 
 //valeur de test du proxy AMANDE
 //test sur la terminaison du nom du proxy (".i2" => "proxy1.i2" => AMANDE)
