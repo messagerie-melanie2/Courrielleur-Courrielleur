@@ -20,7 +20,7 @@
       <vbox>
         <button label="&btHordePrint;" observes="cmd_print" oncommand="goDoCommand('cmd_print')"/>
         <button label="&btHordeAjoutAg;" oncommand="cm2PacomeAjoutAgenda();"/>
-        <button label="&btHordeAgs;" oncommand="webtabs.openWebAppTab('roundcube', 'shareCalendar');"/>
+        <!--<button label="&btHordeAgs;" oncommand="webtabs.openWebAppTab('roundcube', 'shareCalendar');"/>-->
       </vbox>
       <hbox flex="2"/>
 

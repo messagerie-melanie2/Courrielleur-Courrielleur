@@ -383,6 +383,7 @@ toolbar[iconsize="small"] #cm2-tab-anais[disabled] {
   -moz-image-region: rect(0px 24px 24px 0px);  
 }
 #btCMel-param {
+  display: none;
   list-style-image: url("chrome://courrielleur/skin/reglages24.png");
   -moz-image-region: rect(0px 24px 24px 0px);  
 }
